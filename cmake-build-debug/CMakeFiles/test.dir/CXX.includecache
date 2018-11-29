@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jiahuawu/Desktop/ODE_Solver/ODE_System.h
+vector
+-
+functional
+-
+string
+-
+cassert
+-
+ODE_solver.h
+/Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.h
+
+/Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.h
+vector
+-
+
+/Users/jiahuawu/Desktop/ODE_Solver/test.cpp
+vector
+-
+iostream
+-
+ODE_System.h
+/Users/jiahuawu/Desktop/ODE_Solver/ODE_System.h
+

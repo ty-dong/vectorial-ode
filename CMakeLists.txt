@@ -5,3 +5,4 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 # As you solve exercises, you need to add them here.
 # The syntax is add_executable(executable_name source_file_name)
 
+add_executable(test test.cpp)

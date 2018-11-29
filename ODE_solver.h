@@ -6,14 +6,25 @@
 #define PROJECT_ODE_SOLVER_H
 
 #include <vector>
-#include "ODE_System.h"
+using namespace std;
 
-template <typename T, int dim>
-typedef vector<T> Vector;
-typedef vector<Vector> Matrix;
+template <typename T>
+using Vector =  vector<T>;
+template <typename T>
+using Matrix =  vector<Vector<T> >;
 
-Matrix Adams_Bashforth(ODE_System& system, int M);
-Matrix ForwardEuler(ODE_System& system, int M);
-Matrix RKSystem4th(ODE_System& system, int M);
+
+//f(t,X) = A*X + g(t)
+//dim = y00.size()
+
+template <typename T>
+Matrix<T> Adams_Bashforth(double t0, double tn, Vector<T> y00, int M, Vector<T> f(T,Vector<T>));
+
+template <typename T>
+Matrix<T> ForwardEuler(double t0, double tn, Vector<T> y00, int M, Vector<T> f(T,Vector<T>));
+
+template <typename T>
+Matrix<T> RKSystem4th(double t0, double tn, Vector<T> y00, int M, Vector<T> f(T,Vector<T>));
+
 
 #endif //PROJECT_ODE_SOLVER_H
