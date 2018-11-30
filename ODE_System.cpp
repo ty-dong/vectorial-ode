@@ -26,6 +26,7 @@ ODE_System::~ODE_System() {
     y00.resize(0);
 }
 
+Matrix ODE_System::access_solution() const { return solution;}
 
 void ODE_System::set_A(const Matrix &other) { A = other; }
 

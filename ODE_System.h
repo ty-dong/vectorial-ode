@@ -39,6 +39,8 @@ public:
     ODE_System(double t0, double tn, Vector y00, Matrix A, Vector g(Real), int dim); // Constructor
     ~ODE_System(); // Destructor
 
+    Matrix access_solution() const;
+
     void set_A(const Matrix& A);
     void set_g(Vector g(Real));
     void set_y0(const Vector& y0);
