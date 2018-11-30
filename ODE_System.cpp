@@ -2,7 +2,7 @@
 // Created by Jiahua WU on 30.11.18.
 //
 
-//Source code
+/// STL include
 #include <vector>
 #include <functional>
 #include <string>
@@ -10,17 +10,22 @@
 #include <iostream>
 #include <fstream>
 
+/// local include
 #include "ODE_solver.h"
 #include "ODE_System.h"
 using namespace std;
 
 ODE_System::ODE_System(double t0, double tn, Vector y00, Matrix A, Vector g(Real),int dim):
         A(A), t0(t0),tn(tn),y00(y00),solution(1,y00){
+    /// Check the match of dimension
     assert(A.size() == dim and y00.size() == dim);
     ODE_System::g = g;
 }
 
 ODE_System::~ODE_System() {
+/**
+ *  Deallocate memory used by std::vector objects
+ */
     A.resize(0);
     solution.resize(0);
     y00.resize(0);
@@ -36,17 +41,17 @@ void ODE_System::set_y0(const Vector & other) { y00 = other;}
 
 void ODE_System::solve(Solver_type solver_type, int M) {
     switch (solver_type) {
-        case FwdEuler: solution = ForwardEuler(t0,tn,y00,M,A,g);
+        case FwdEuler: solution = ForwardEuler(t0,tn,y00,M,A,g);break;
         case AB: int step;
                  cout << "Please input the step"; cin >> step;
                  solution = Adams_Bashforth(t0,tn,y00,M,step,A,g);
-        case RK4: solution = RKSystem4th(t0,tn,y00,M,A,g);
+                 break;
+        case RK4: solution = RKSystem4th(t0,tn,y00,M,A,g);break;
         default: cout << "Invalid input of solver type, please choose one between FwdEuler, AB, RK4";
     }
 }
 
 void ODE_System::write_solution(string filename, string filetype) {
-
     ofstream outFile;
     outFile.open(filename + '.' + filetype);
     if (filetype == "csv",ios::out){
