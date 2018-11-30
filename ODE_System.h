@@ -45,7 +45,7 @@ protected:
 
 public:
     /// Constructor. Initializes ODE_System data structures
-    ODE_System(double t0, double tn, Vector y00, Matrix A, Vector g(Real), int dim);
+    ODE_System(double t0, double tn, Vector y00, Matrix A, Vector g(Real));
     /// Destructor
     ~ODE_System();
 
@@ -61,8 +61,9 @@ public:
     /// M: number of time steps
     void solve(Solver_type solver_type,int M);
     /// Output the solution as filetype given by the user
+    /// precision: number of significant numbers
     /// filetype available: csv, dat
-    void write_solution(string filename,string filetype);
+    void write_solution(string filename,string filetype, int precision = 5);
 };
 
 #endif //PROJECT_ODE_SYSTEM_H
