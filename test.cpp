@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <iostream>
+#include <functional>
 #include "ODE_System.h"
 #include "ODE_solver.h"
 using namespace std;
@@ -12,6 +13,7 @@ Vector g(double t){
     Vector result(5,0);
     return result;
 }
+
 
 int main(){
     vector<double> y00(5,1);

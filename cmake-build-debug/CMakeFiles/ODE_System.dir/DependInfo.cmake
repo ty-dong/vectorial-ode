@@ -4,9 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jiahuawu/Desktop/ODE_Solver/ODE_System.cpp" "/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/ODE_System.o"
-  "/Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.cpp" "/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/ODE_solver.o"
-  "/Users/jiahuawu/Desktop/ODE_Solver/test.cpp" "/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/test.o"
+  "/Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.cpp" "/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles/ODE_System.dir/ODE_solver.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

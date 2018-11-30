@@ -13,14 +13,15 @@
 #include "ODE_solver.h"
 using namespace std;
 
+typedef Vector(*Funpointer)(Real);
+
 
 enum Solver_type {FwdEuler, AB, RK4};
 
 class ODE_System{
-    friend Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, Vector f(Real,Vector),int step);
-    friend Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M, Vector f(Real,Vector));
-    friend Matrix RKSystem4th(Real t0, Real tn, Vector const & y00, int M, Vector f(Real,Vector));
-    friend Vector f(Real t, Vector X);
+    friend Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M,int step,  Matrix const &A, Vector g(Real));
+    friend Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M,  Matrix const &A, Vector g(Real));
+    friend Matrix RKSystem4th(Real t0, Real tn, Vector const & y00, int M,  Matrix const &A, Vector g(Real));
 
 protected:
 
@@ -31,7 +32,7 @@ protected:
 
     Matrix A;
     Matrix solution;
-    function<Vector(Real)> g;
+    Funpointer g;
 
 
 public:

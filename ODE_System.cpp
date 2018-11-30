@@ -31,13 +31,13 @@ void ODE_System::set_g(Vector other(Real)) { g = other; }
 
 void ODE_System::set_y0(const Vector & other) { y00 = other;}
 
-Vector f(Real t, Vector X) {return ODE_System::A*X + ODE_System::g(t);}
-
 void ODE_System::solve(Solver_type solver_type, int M) {
     switch (solver_type) {
-        case FwdEuler: solution = ForwardEuler(t0,tn,y00,M,f);
-        case AB: solution = Adams_Bashforth(t0,tn,y00,M,f);
-        case RK4: solution = RKSystem4th(t0,tn,y00,M,f);
+        case FwdEuler: solution = ForwardEuler(t0,tn,y00,M,A,g);
+        case AB: int step;
+                 cout << "Please input the step"; cin >> step;
+                 solution = Adams_Bashforth(t0,tn,y00,M,step,A,g);
+        case RK4: solution = RKSystem4th(t0,tn,y00,M,A,g);
         default: cout << "Invalid input of solver type, please choose one between FwdEuler, AB, RK4";
     }
 }

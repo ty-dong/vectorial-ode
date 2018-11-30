@@ -49,7 +49,7 @@ Vector operator- (Vector const &X, Vector const &Y){
 }
 
 
-Vector operator*(double const h,Vector const & f){
+Vector operator*(double const& h,Vector const & f){
     int n=f.size();
     Vector rlt;
     for (int i=0;i<n;i++){

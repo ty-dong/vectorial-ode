@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/ODE_System.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/ODE_System.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.h">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/test.cpp">
 			<Option target="test"/>
 		</Unit>
