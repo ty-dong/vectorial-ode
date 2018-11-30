@@ -8,6 +8,8 @@
 #include <string>
 #include <cassert>
 #include <iostream>
+#include <fstream>
+
 #include "ODE_solver.h"
 #include "ODE_System.h"
 using namespace std;
@@ -44,4 +46,24 @@ void ODE_System::solve(Solver_type solver_type, int M) {
 
 void ODE_System::write_solution(string filename, string filetype) {
 
+    ofstream outFile;
+    outFile.open(filename + '.' + filetype);
+    if (filetype == "csv",ios::out){
+        for (size_t i = 0; i<solution.size();i++){
+            for (auto value : solution[i]){
+                outFile << value << ',';
+            }
+            outFile << endl;
+        }
+    }
+    else if (filetype == "txt",ios::out){
+        for (size_t i = 0; i<solution.size();i++){
+            for (auto value : solution[i]){
+                outFile << value << ' ';
+            }
+            outFile << endl;
+        }
+    }
+    outFile.close();
 }
+
