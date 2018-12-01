@@ -23,11 +23,6 @@ enum Solver_type {FwdEuler, AB, RK4};
 
 class ODE_System{
 
-    /// Set solvers as friend functions
-    friend Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M,int step,  Matrix const &A, Vector g(Real));
-    friend Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M,  Matrix const &A, Vector g(Real));
-    friend Matrix RKSystem4th(Real t0, Real tn, Vector const & y00, int M,  Matrix const &A, Vector g(Real));
-
 protected:
 
     Real t0; /// Initial time
@@ -40,7 +35,6 @@ protected:
     Matrix solution; /// Matrix storing the solution.
                      /// ith row = solution vector at ith time step
                      /// jth col = solution of the jth component at all time steps
-
 
 
 public:
@@ -60,9 +54,10 @@ public:
     /// Call the solvers to solve the system and write the solution to member solution
     /// M: number of time steps
     void solve(Solver_type solver_type,int M);
+
     /// Output the solution as filetype given by the user
     /// precision: number of significant numbers
-    /// filetype available: csv, dat
+    /// filetype available: csv, dat,txt
     void write_solution(string filename,string filetype, int precision = 5);
 };
 
