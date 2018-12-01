@@ -1,0 +1,173 @@
+\hypertarget{class_o_d_e___system}{}\section{O\+D\+E\+\_\+\+System Class Reference}
+\label{class_o_d_e___system}\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+
+
+{\ttfamily \#include $<$O\+D\+E\+\_\+\+System.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_o_d_e___system_ac8345744d3861336748b03672bbcec08}\label{class_o_d_e___system_ac8345744d3861336748b03672bbcec08}} 
+enum {\bfseries Solver\+\_\+type} \{ {\bfseries Fwd\+Euler}, 
+{\bfseries AB}, 
+{\bfseries R\+K4}
+ \}
+\item 
+\mbox{\Hypertarget{class_o_d_e___system_a9ff6775dafbba78d49f164174aa7074e}\label{class_o_d_e___system_a9ff6775dafbba78d49f164174aa7074e}} 
+typedef Vector($\ast$ {\bfseries Funpointer}) (Real)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_d_e___system_a38bd032b6faa0acc252c8c6c14a734b6}{O\+D\+E\+\_\+\+System}} (double \mbox{\hyperlink{class_o_d_e___system_a1947b357608babc98c5e79d645e24c3c}{t0}}, double \mbox{\hyperlink{class_o_d_e___system_a5c5a0dd9f04dfb8d8a84d49b741773af}{tn}}, Vector \mbox{\hyperlink{class_o_d_e___system_a1379137a4480e5861fd1911bc061f908}{y00}}, Matrix \mbox{\hyperlink{class_o_d_e___system_a632009677e80b62a1996e842398bf8b6}{A}}, Vector \mbox{\hyperlink{class_o_d_e___system_a2dee2a4b3468547c3ddab15edfc8ddfd}{g}}(Real))
+\item 
+\mbox{\hyperlink{class_o_d_e___system_a1d38890ff0950344d4d34b9fab6a956b}{$\sim$\+O\+D\+E\+\_\+\+System}} ()
+\item 
+Matrix \mbox{\hyperlink{class_o_d_e___system_aebb5a7971ef1c429077155eec549f713}{access\+\_\+solution}} () const
+\item 
+void \mbox{\hyperlink{class_o_d_e___system_a24094974423d600f580455427141fa3e}{set\+\_\+A}} (const Matrix \&\mbox{\hyperlink{class_o_d_e___system_a632009677e80b62a1996e842398bf8b6}{A}})
+\item 
+void \mbox{\hyperlink{class_o_d_e___system_a6906f9069496452cab2b56b6a49635d1}{set\+\_\+g}} (Vector \mbox{\hyperlink{class_o_d_e___system_a2dee2a4b3468547c3ddab15edfc8ddfd}{g}}(Real))
+\item 
+void \mbox{\hyperlink{class_o_d_e___system_a1856c9b15a41ca733e509e44f4535f5f}{set\+\_\+y0}} (const Vector \&y0)
+\item 
+void \mbox{\hyperlink{class_o_d_e___system_acb3bf3f43339cad39b4d0a5918dcf0eb}{solve}} (Solver\+\_\+type solver\+\_\+type, int M)
+\item 
+void \mbox{\hyperlink{class_o_d_e___system_a5220baf5d3f6df54b78bb1ef5079e170}{write\+\_\+solution}} (string filename, string filetype, int precision=5)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Real \mbox{\hyperlink{class_o_d_e___system_a1947b357608babc98c5e79d645e24c3c}{t0}}
+\item 
+Real \mbox{\hyperlink{class_o_d_e___system_a5c5a0dd9f04dfb8d8a84d49b741773af}{tn}}
+\item 
+Vector \mbox{\hyperlink{class_o_d_e___system_a1379137a4480e5861fd1911bc061f908}{y00}}
+\item 
+Funpointer \mbox{\hyperlink{class_o_d_e___system_a2dee2a4b3468547c3ddab15edfc8ddfd}{g}}
+\item 
+Matrix \mbox{\hyperlink{class_o_d_e___system_a632009677e80b62a1996e842398bf8b6}{A}}
+\item 
+Matrix \mbox{\hyperlink{class_o_d_e___system_ab2504680346a353e353f147f1ad9c51d}{solution}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class stores essential ingredient of a vectorial ode system as well as a solution obtained by calling specified solver functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_o_d_e___system_a38bd032b6faa0acc252c8c6c14a734b6}\label{class_o_d_e___system_a38bd032b6faa0acc252c8c6c14a734b6}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{O\+D\+E\+\_\+\+System()}{ODE\_System()}}
+{\footnotesize\ttfamily O\+D\+E\+\_\+\+System\+::\+O\+D\+E\+\_\+\+System (\begin{DoxyParamCaption}\item[{double}]{t0,  }\item[{double}]{tn,  }\item[{Vector}]{y00,  }\item[{Matrix}]{A,  }\item[{Vector }]{gReal }\end{DoxyParamCaption})}
+
+Constructor. Initializes \mbox{\hyperlink{class_o_d_e___system}{O\+D\+E\+\_\+\+System}} data structures \mbox{\Hypertarget{class_o_d_e___system_a1d38890ff0950344d4d34b9fab6a956b}\label{class_o_d_e___system_a1d38890ff0950344d4d34b9fab6a956b}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!````~O\+D\+E\+\_\+\+System@{$\sim$\+O\+D\+E\+\_\+\+System}}
+\index{````~O\+D\+E\+\_\+\+System@{$\sim$\+O\+D\+E\+\_\+\+System}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{$\sim$\+O\+D\+E\+\_\+\+System()}{~ODE\_System()}}
+{\footnotesize\ttfamily O\+D\+E\+\_\+\+System\+::$\sim$\+O\+D\+E\+\_\+\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor Deallocate memory used by std\+::vector objects
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_o_d_e___system_aebb5a7971ef1c429077155eec549f713}\label{class_o_d_e___system_aebb5a7971ef1c429077155eec549f713}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!access\+\_\+solution@{access\+\_\+solution}}
+\index{access\+\_\+solution@{access\+\_\+solution}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{access\+\_\+solution()}{access\_solution()}}
+{\footnotesize\ttfamily Matrix O\+D\+E\+\_\+\+System\+::access\+\_\+solution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Accessor to get the solution \mbox{\Hypertarget{class_o_d_e___system_a24094974423d600f580455427141fa3e}\label{class_o_d_e___system_a24094974423d600f580455427141fa3e}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!set\+\_\+A@{set\+\_\+A}}
+\index{set\+\_\+A@{set\+\_\+A}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{set\+\_\+\+A()}{set\_A()}}
+{\footnotesize\ttfamily void O\+D\+E\+\_\+\+System\+::set\+\_\+A (\begin{DoxyParamCaption}\item[{const Matrix \&}]{A }\end{DoxyParamCaption})}
+
+Set the Matrix A \mbox{\Hypertarget{class_o_d_e___system_a6906f9069496452cab2b56b6a49635d1}\label{class_o_d_e___system_a6906f9069496452cab2b56b6a49635d1}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!set\+\_\+g@{set\+\_\+g}}
+\index{set\+\_\+g@{set\+\_\+g}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{set\+\_\+g()}{set\_g()}}
+{\footnotesize\ttfamily void O\+D\+E\+\_\+\+System\+::set\+\_\+g (\begin{DoxyParamCaption}\item[{Vector }]{gReal }\end{DoxyParamCaption})}
+
+Set the function g \mbox{\Hypertarget{class_o_d_e___system_a1856c9b15a41ca733e509e44f4535f5f}\label{class_o_d_e___system_a1856c9b15a41ca733e509e44f4535f5f}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!set\+\_\+y0@{set\+\_\+y0}}
+\index{set\+\_\+y0@{set\+\_\+y0}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{set\+\_\+y0()}{set\_y0()}}
+{\footnotesize\ttfamily void O\+D\+E\+\_\+\+System\+::set\+\_\+y0 (\begin{DoxyParamCaption}\item[{const Vector \&}]{y0 }\end{DoxyParamCaption})}
+
+Set initial condition \mbox{\Hypertarget{class_o_d_e___system_acb3bf3f43339cad39b4d0a5918dcf0eb}\label{class_o_d_e___system_acb3bf3f43339cad39b4d0a5918dcf0eb}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!solve@{solve}}
+\index{solve@{solve}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void O\+D\+E\+\_\+\+System\+::solve (\begin{DoxyParamCaption}\item[{Solver\+\_\+type}]{solver\+\_\+type,  }\item[{int}]{M }\end{DoxyParamCaption})}
+
+Call the solvers to solve the system and write the solution to member solution~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em M} & number of time steps \\
+\hline
+{\em solver\+\_\+type} & enum type including Fwd\+Euler, AB, R\+K4 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_o_d_e___system_a5220baf5d3f6df54b78bb1ef5079e170}\label{class_o_d_e___system_a5220baf5d3f6df54b78bb1ef5079e170}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!write\+\_\+solution@{write\+\_\+solution}}
+\index{write\+\_\+solution@{write\+\_\+solution}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{write\+\_\+solution()}{write\_solution()}}
+{\footnotesize\ttfamily void O\+D\+E\+\_\+\+System\+::write\+\_\+solution (\begin{DoxyParamCaption}\item[{string}]{filename,  }\item[{string}]{filetype,  }\item[{int}]{precision = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+Output the solution as filetype given by the user~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em precision} & number of significant numbers~\newline
+\\
+\hline
+{\em filetype} & available\+: csv, dat,txt \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_o_d_e___system_a632009677e80b62a1996e842398bf8b6}\label{class_o_d_e___system_a632009677e80b62a1996e842398bf8b6}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!A@{A}}
+\index{A@{A}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily Matrix O\+D\+E\+\_\+\+System\+::A\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matrix A as defined in the problem \mbox{\Hypertarget{class_o_d_e___system_a2dee2a4b3468547c3ddab15edfc8ddfd}\label{class_o_d_e___system_a2dee2a4b3468547c3ddab15edfc8ddfd}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!g@{g}}
+\index{g@{g}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily Funpointer O\+D\+E\+\_\+\+System\+::g\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function pointer storing the function g as defined in the problem \mbox{\Hypertarget{class_o_d_e___system_ab2504680346a353e353f147f1ad9c51d}\label{class_o_d_e___system_ab2504680346a353e353f147f1ad9c51d}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!solution@{solution}}
+\index{solution@{solution}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{solution}{solution}}
+{\footnotesize\ttfamily Matrix O\+D\+E\+\_\+\+System\+::solution\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matrix storing the solution~\newline
+ith row = solution vector at ith time step~\newline
+jth col = solution of the jth component at all time steps \mbox{\Hypertarget{class_o_d_e___system_a1947b357608babc98c5e79d645e24c3c}\label{class_o_d_e___system_a1947b357608babc98c5e79d645e24c3c}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!t0@{t0}}
+\index{t0@{t0}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{t0}{t0}}
+{\footnotesize\ttfamily Real O\+D\+E\+\_\+\+System\+::t0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initial time \mbox{\Hypertarget{class_o_d_e___system_a5c5a0dd9f04dfb8d8a84d49b741773af}\label{class_o_d_e___system_a5c5a0dd9f04dfb8d8a84d49b741773af}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!tn@{tn}}
+\index{tn@{tn}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{tn}{tn}}
+{\footnotesize\ttfamily Real O\+D\+E\+\_\+\+System\+::tn\hspace{0.3cm}{\ttfamily [protected]}}
+
+End time \mbox{\Hypertarget{class_o_d_e___system_a1379137a4480e5861fd1911bc061f908}\label{class_o_d_e___system_a1379137a4480e5861fd1911bc061f908}} 
+\index{O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}!y00@{y00}}
+\index{y00@{y00}!O\+D\+E\+\_\+\+System@{O\+D\+E\+\_\+\+System}}
+\subsubsection{\texorpdfstring{y00}{y00}}
+{\footnotesize\ttfamily Vector O\+D\+E\+\_\+\+System\+::y00\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initial condition 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jiahuawu/\+Desktop/\+O\+D\+E\+\_\+\+Solver/O\+D\+E\+\_\+\+System.\+h\item 
+/\+Users/jiahuawu/\+Desktop/\+O\+D\+E\+\_\+\+Solver/O\+D\+E\+\_\+\+System.\+cpp\end{DoxyCompactItemize}
