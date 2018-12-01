@@ -20,7 +20,9 @@ using namespace std;
 //dim = y00.size()
 
 Vector operator* (Matrix const &A, Vector const &X){
-    assert(A[0].size() == X.size());
+    if(A[0].size() != X.size()){
+        throw dimnotmatch();
+    };
     Vector result(X.size(),0);
     for (size_t i = 0; i<X.size();i++){
         for(size_t j = 0;j<X.size();j++){
@@ -31,7 +33,9 @@ Vector operator* (Matrix const &A, Vector const &X){
 }
 
 Vector operator + (Vector const &X, Vector const &Y){
-    assert(X.size() == Y.size());
+    if(X.size() == Y.size()){
+        throw dimnotmatch();
+    };
     Vector result(X.size(),0);
     for (size_t i = 0; i < X.size(); i++){
         result[i] = X[i] + Y[i];
@@ -40,7 +44,9 @@ Vector operator + (Vector const &X, Vector const &Y){
 }
 
 Vector operator- (Vector const &X, Vector const &Y){
-    assert(X.size() == Y.size());
+    if(X.size() == Y.size()){
+        throw dimnotmatch();
+    };
     Vector result(X.size(),0);
     for (size_t i = 0; i < X.size(); i++){
         result[i] = X[i] -Y[i];
@@ -60,6 +66,9 @@ Vector operator*(double const& h,Vector const & f){
 
 
 Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M,  Matrix const &A,Vector g(Real)){
+    if(M<1){
+        throw timesteppossitive();
+    }
     Real h=(tn-t0)/M;
     Matrix solution;
     Vector f;
@@ -73,6 +82,9 @@ Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M,  Matrix const &
 
 
 Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Matrix const &A,Vector g(Real)){
+    if(M<1){
+        throw timesteppossitive();
+    }
     Real h=(tn-t0)/M;
     Matrix solution;
     Vector f1;
@@ -81,6 +93,7 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
     Vector f4;
     switch (step){
         case 1: return ForwardEuler(t0,tn,y00,M,A,g);
+                break;
         case 2:
             solution.push_back(y00);
             solution.push_back(y00);
@@ -90,6 +103,7 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
                 solution.push_back(solution[i+1]+h*(1.5*f2-0.5*f1));
             }
             return solution;
+            break;
         case 3:
             solution.push_back(y00);
             solution.push_back(y00);
@@ -101,6 +115,7 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
                 solution.push_back(solution[i+2]+h*(23.0/12*f3-16.0/12*f2+5.0/12*f1));
             }
             return solution;
+            break;
         case 4:
             solution.push_back(y00);
             solution.push_back(y00);
@@ -114,9 +129,9 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
                 solution.push_back(solution[i+3]+h*(55.0/24*f4-59.0/24*f3+37.0/24*f2-9.0/24*f1));
             }
             return solution;
+            break;
         default:
-            Matrix empty;
-            return empty;
+            throw ordernotmatch();
     }
 }
 
@@ -124,6 +139,9 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
 
 
 Matrix RKSystem4th(Real t0, Real tn, Vector const & y00, int M, Matrix const &A,Vector g(Real)){
+    if(M<1){
+        throw timesteppossitive();
+    }
     Real h=(tn-t0)/M;
     Matrix solution;
     solution.push_back(y00);
