@@ -15,9 +15,19 @@ Vector g(double t){
 }
 
 
-int main(){
+int main(argc argv){
     vector<double> y00(5,1);
     vector<vector<double > > B(5,y00);
-    ODE_System A(0,1,y00,B,g,5);
+    ODE_System A(0,1,y00,B,g);
     cout << B[0][1];
 }
+
+AbstractSolver* a;
+
+
+if (userChoice == 'ForwardEuler')
+    a = new ForwardEuler();
+else
+
+
+a.solve()
