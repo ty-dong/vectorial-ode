@@ -67,240 +67,134 @@ $(function() {
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_o_d_e___system-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ODE_System Class Reference</div>  </div>
+<div class="title">ODE_System Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_o_d_e___system_8h_source.html">ODE_System.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for ODE_System:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_o_d_e___system.png" usemap="#ODE_5FSystem_map" alt=""/>
+  <map id="ODE_5FSystem_map" name="ODE_5FSystem_map">
+<area href="class_adams___bashforth___system.html" title="Inheritance of class ODE_System: Solving the vectorial system by means of Adams Bashforth method..." alt="Adams_Bashforth_System" shape="rect" coords="0,56,158,80"/>
+<area href="class_forward_euler___system.html" title="Inheritance of class ODE_System: Solving the vectorial system by means of forward Euler method..." alt="ForwardEuler_System" shape="rect" coords="168,56,326,80"/>
+<area href="class_r_k_system4th___system.html" title="Inheritance of class ODE_System: Solving the vectorial system by means of Runge Kutta 4th order metho..." alt="RKSystem4th_System" shape="rect" coords="336,56,494,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac8345744d3861336748b03672bbcec08"><td class="memItemLeft" align="right" valign="top"><a id="ac8345744d3861336748b03672bbcec08"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Solver_type</b> { <b>FwdEuler</b>, 
-<b>AB</b>, 
-<b>RK4</b>
- }</td></tr>
-<tr class="separator:ac8345744d3861336748b03672bbcec08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff6775dafbba78d49f164174aa7074e"><td class="memItemLeft" align="right" valign="top"><a id="a9ff6775dafbba78d49f164174aa7074e"></a>
-typedef Vector(*&#160;</td><td class="memItemRight" valign="bottom"><b>Funpointer</b>) (Real)</td></tr>
+typedef Vector(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a9ff6775dafbba78d49f164174aa7074e">Funpointer</a>) (Real)</td></tr>
+<tr class="memdesc:a9ff6775dafbba78d49f164174aa7074e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the function pointer type. <br /></td></tr>
 <tr class="separator:a9ff6775dafbba78d49f164174aa7074e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a38bd032b6faa0acc252c8c6c14a734b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a38bd032b6faa0acc252c8c6c14a734b6">ODE_System</a> (double <a class="el" href="class_o_d_e___system.html#a1947b357608babc98c5e79d645e24c3c">t0</a>, double <a class="el" href="class_o_d_e___system.html#a5c5a0dd9f04dfb8d8a84d49b741773af">tn</a>, Vector <a class="el" href="class_o_d_e___system.html#a1379137a4480e5861fd1911bc061f908">y00</a>, Matrix <a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a>, Vector <a class="el" href="class_o_d_e___system.html#a2dee2a4b3468547c3ddab15edfc8ddfd">g</a>(Real))</td></tr>
-<tr class="separator:a38bd032b6faa0acc252c8c6c14a734b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d38890ff0950344d4d34b9fab6a956b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1d38890ff0950344d4d34b9fab6a956b">~ODE_System</a> ()</td></tr>
+<tr class="memitem:a39f84fa09d28b6ecf4de1e57b480a568"><td class="memItemLeft" align="right" valign="top"><a id="a39f84fa09d28b6ecf4de1e57b480a568"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a39f84fa09d28b6ecf4de1e57b480a568">ODE_System</a> (double <a class="el" href="class_o_d_e___system.html#a1947b357608babc98c5e79d645e24c3c">t0</a>, double <a class="el" href="class_o_d_e___system.html#a5c5a0dd9f04dfb8d8a84d49b741773af">tn</a>, const Vector &amp;<a class="el" href="class_o_d_e___system.html#a1379137a4480e5861fd1911bc061f908">y00</a>, const Matrix &amp;<a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a>, Vector <a class="el" href="class_o_d_e___system.html#a2dee2a4b3468547c3ddab15edfc8ddfd">g</a>(Real))</td></tr>
+<tr class="memdesc:a39f84fa09d28b6ecf4de1e57b480a568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Initializes <a class="el" href="class_o_d_e___system.html">ODE_System</a> data structures. <br /></td></tr>
+<tr class="separator:a39f84fa09d28b6ecf4de1e57b480a568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d38890ff0950344d4d34b9fab6a956b"><td class="memItemLeft" align="right" valign="top"><a id="a1d38890ff0950344d4d34b9fab6a956b"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1d38890ff0950344d4d34b9fab6a956b">~ODE_System</a> ()</td></tr>
+<tr class="memdesc:a1d38890ff0950344d4d34b9fab6a956b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. Deallocate memory used by std::vector objects. <br /></td></tr>
 <tr class="separator:a1d38890ff0950344d4d34b9fab6a956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebb5a7971ef1c429077155eec549f713"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#aebb5a7971ef1c429077155eec549f713">access_solution</a> () const</td></tr>
+<tr class="memitem:aebb5a7971ef1c429077155eec549f713"><td class="memItemLeft" align="right" valign="top"><a id="aebb5a7971ef1c429077155eec549f713"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#aebb5a7971ef1c429077155eec549f713">access_solution</a> () const</td></tr>
+<tr class="memdesc:aebb5a7971ef1c429077155eec549f713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor to get the solution. <br /></td></tr>
 <tr class="separator:aebb5a7971ef1c429077155eec549f713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24094974423d600f580455427141fa3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a24094974423d600f580455427141fa3e">set_A</a> (const Matrix &amp;<a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a>)</td></tr>
+<tr class="memitem:a24094974423d600f580455427141fa3e"><td class="memItemLeft" align="right" valign="top"><a id="a24094974423d600f580455427141fa3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a24094974423d600f580455427141fa3e">set_A</a> (const Matrix &amp;<a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a>)</td></tr>
+<tr class="memdesc:a24094974423d600f580455427141fa3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Matrix A. <br /></td></tr>
 <tr class="separator:a24094974423d600f580455427141fa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6906f9069496452cab2b56b6a49635d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a6906f9069496452cab2b56b6a49635d1">set_g</a> (Vector <a class="el" href="class_o_d_e___system.html#a2dee2a4b3468547c3ddab15edfc8ddfd">g</a>(Real))</td></tr>
+<tr class="memitem:a6906f9069496452cab2b56b6a49635d1"><td class="memItemLeft" align="right" valign="top"><a id="a6906f9069496452cab2b56b6a49635d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a6906f9069496452cab2b56b6a49635d1">set_g</a> (Vector <a class="el" href="class_o_d_e___system.html#a2dee2a4b3468547c3ddab15edfc8ddfd">g</a>(Real))</td></tr>
+<tr class="memdesc:a6906f9069496452cab2b56b6a49635d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the function g. <br /></td></tr>
 <tr class="separator:a6906f9069496452cab2b56b6a49635d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1856c9b15a41ca733e509e44f4535f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1856c9b15a41ca733e509e44f4535f5f">set_y0</a> (const Vector &amp;y0)</td></tr>
+<tr class="memitem:a1856c9b15a41ca733e509e44f4535f5f"><td class="memItemLeft" align="right" valign="top"><a id="a1856c9b15a41ca733e509e44f4535f5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1856c9b15a41ca733e509e44f4535f5f">set_y0</a> (const Vector &amp;y0)</td></tr>
+<tr class="memdesc:a1856c9b15a41ca733e509e44f4535f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set initial condition. <br /></td></tr>
 <tr class="separator:a1856c9b15a41ca733e509e44f4535f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3bf3f43339cad39b4d0a5918dcf0eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#acb3bf3f43339cad39b4d0a5918dcf0eb">solve</a> (Solver_type solver_type, int M)</td></tr>
-<tr class="separator:acb3bf3f43339cad39b4d0a5918dcf0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5220baf5d3f6df54b78bb1ef5079e170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a5220baf5d3f6df54b78bb1ef5079e170">write_solution</a> (string filename, string filetype, int precision=5)</td></tr>
-<tr class="separator:a5220baf5d3f6df54b78bb1ef5079e170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe78282ecf67d851f1a2363a028e6dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a5fe78282ecf67d851f1a2363a028e6dd">solve</a> (int M)=0</td></tr>
+<tr class="memdesc:a5fe78282ecf67d851f1a2363a028e6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method. Call the solvers to solve the system.  <a href="#a5fe78282ecf67d851f1a2363a028e6dd">More...</a><br /></td></tr>
+<tr class="separator:a5fe78282ecf67d851f1a2363a028e6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07810b15fa1d891b64a83812433fef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#ad07810b15fa1d891b64a83812433fef6">write_solution</a> (string filename, int precision=5)</td></tr>
+<tr class="memdesc:ad07810b15fa1d891b64a83812433fef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the solution as filetype given by the user<br />
+.  <a href="#ad07810b15fa1d891b64a83812433fef6">More...</a><br /></td></tr>
+<tr class="separator:ad07810b15fa1d891b64a83812433fef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a1947b357608babc98c5e79d645e24c3c"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1947b357608babc98c5e79d645e24c3c">t0</a></td></tr>
+<tr class="memitem:a1947b357608babc98c5e79d645e24c3c"><td class="memItemLeft" align="right" valign="top"><a id="a1947b357608babc98c5e79d645e24c3c"></a>
+Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1947b357608babc98c5e79d645e24c3c">t0</a></td></tr>
+<tr class="memdesc:a1947b357608babc98c5e79d645e24c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial time. <br /></td></tr>
 <tr class="separator:a1947b357608babc98c5e79d645e24c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c5a0dd9f04dfb8d8a84d49b741773af"><td class="memItemLeft" align="right" valign="top">Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a5c5a0dd9f04dfb8d8a84d49b741773af">tn</a></td></tr>
+<tr class="memitem:a5c5a0dd9f04dfb8d8a84d49b741773af"><td class="memItemLeft" align="right" valign="top"><a id="a5c5a0dd9f04dfb8d8a84d49b741773af"></a>
+Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a5c5a0dd9f04dfb8d8a84d49b741773af">tn</a></td></tr>
+<tr class="memdesc:a5c5a0dd9f04dfb8d8a84d49b741773af"><td class="mdescLeft">&#160;</td><td class="mdescRight">End time. <br /></td></tr>
 <tr class="separator:a5c5a0dd9f04dfb8d8a84d49b741773af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1379137a4480e5861fd1911bc061f908"><td class="memItemLeft" align="right" valign="top">Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1379137a4480e5861fd1911bc061f908">y00</a></td></tr>
+<tr class="memitem:a1379137a4480e5861fd1911bc061f908"><td class="memItemLeft" align="right" valign="top"><a id="a1379137a4480e5861fd1911bc061f908"></a>
+Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1379137a4480e5861fd1911bc061f908">y00</a></td></tr>
+<tr class="memdesc:a1379137a4480e5861fd1911bc061f908"><td class="mdescLeft">&#160;</td><td class="mdescRight">nitial condition <br /></td></tr>
 <tr class="separator:a1379137a4480e5861fd1911bc061f908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dee2a4b3468547c3ddab15edfc8ddfd"><td class="memItemLeft" align="right" valign="top">Funpointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a2dee2a4b3468547c3ddab15edfc8ddfd">g</a></td></tr>
+<tr class="memitem:a2dee2a4b3468547c3ddab15edfc8ddfd"><td class="memItemLeft" align="right" valign="top"><a id="a2dee2a4b3468547c3ddab15edfc8ddfd"></a>
+<a class="el" href="class_o_d_e___system.html#a9ff6775dafbba78d49f164174aa7074e">Funpointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a2dee2a4b3468547c3ddab15edfc8ddfd">g</a></td></tr>
+<tr class="memdesc:a2dee2a4b3468547c3ddab15edfc8ddfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer storing the function g as defined in the problem. <br /></td></tr>
 <tr class="separator:a2dee2a4b3468547c3ddab15edfc8ddfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a632009677e80b62a1996e842398bf8b6"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a></td></tr>
+<tr class="memitem:a632009677e80b62a1996e842398bf8b6"><td class="memItemLeft" align="right" valign="top"><a id="a632009677e80b62a1996e842398bf8b6"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a></td></tr>
+<tr class="memdesc:a632009677e80b62a1996e842398bf8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix A as defined in the problem. <br /></td></tr>
 <tr class="separator:a632009677e80b62a1996e842398bf8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2504680346a353e353f147f1ad9c51d"><td class="memItemLeft" align="right" valign="top">Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#ab2504680346a353e353f147f1ad9c51d">solution</a></td></tr>
+<tr class="memitem:ab2504680346a353e353f147f1ad9c51d"><td class="memItemLeft" align="right" valign="top"><a id="ab2504680346a353e353f147f1ad9c51d"></a>
+Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#ab2504680346a353e353f147f1ad9c51d">solution</a></td></tr>
+<tr class="memdesc:ab2504680346a353e353f147f1ad9c51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix storing the solution<br />
+ith row = solution vector at ith time step<br />
+jth col = solution of the jth component at all time steps. <br /></td></tr>
 <tr class="separator:ab2504680346a353e353f147f1ad9c51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class stores essential ingredient of a vectorial ode system as well as a solution obtained by calling specified solver functions. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a38bd032b6faa0acc252c8c6c14a734b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38bd032b6faa0acc252c8c6c14a734b6">&#9670;&nbsp;</a></span>ODE_System()</h2>
+<div class="textblock"><p>This abstract class stores essential ingredient of a vectorial ode system as well as a solution obtained by using specified solver functions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5fe78282ecf67d851f1a2363a028e6dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe78282ecf67d851f1a2363a028e6dd">&#9670;&nbsp;</a></span>solve()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ODE_System::ODE_System </td>
+          <td class="memname">virtual void ODE_System::solve </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>t0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>tn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector&#160;</td>
-          <td class="paramname"><em>y00</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Matrix&#160;</td>
-          <td class="paramname"><em>A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Vector &#160;</td>
-          <td class="paramname"><em>g</em>Real&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Constructor. Initializes <a class="el" href="class_o_d_e___system.html">ODE_System</a> data structures </p>
-
-</div>
-</div>
-<a id="a1d38890ff0950344d4d34b9fab6a956b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d38890ff0950344d4d34b9fab6a956b">&#9670;&nbsp;</a></span>~ODE_System()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ODE_System::~ODE_System </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Destructor </p>
-<p>Deallocate memory used by std::vector objects</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aebb5a7971ef1c429077155eec549f713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebb5a7971ef1c429077155eec549f713">&#9670;&nbsp;</a></span>access_solution()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Matrix ODE_System::access_solution </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Accessor to get the solution </p>
-
-</div>
-</div>
-<a id="a24094974423d600f580455427141fa3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24094974423d600f580455427141fa3e">&#9670;&nbsp;</a></span>set_A()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ODE_System::set_A </td>
-          <td>(</td>
-          <td class="paramtype">const Matrix &amp;&#160;</td>
-          <td class="paramname"><em>A</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the Matrix A </p>
-
-</div>
-</div>
-<a id="a6906f9069496452cab2b56b6a49635d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6906f9069496452cab2b56b6a49635d1">&#9670;&nbsp;</a></span>set_g()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ODE_System::set_g </td>
-          <td>(</td>
-          <td class="paramtype">Vector &#160;</td>
-          <td class="paramname"><em>g</em>Real</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the function g </p>
-
-</div>
-</div>
-<a id="a1856c9b15a41ca733e509e44f4535f5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1856c9b15a41ca733e509e44f4535f5f">&#9670;&nbsp;</a></span>set_y0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ODE_System::set_y0 </td>
-          <td>(</td>
-          <td class="paramtype">const Vector &amp;&#160;</td>
-          <td class="paramname"><em>y0</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set initial condition </p>
-
-</div>
-</div>
-<a id="acb3bf3f43339cad39b4d0a5918dcf0eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb3bf3f43339cad39b4d0a5918dcf0eb">&#9670;&nbsp;</a></span>solve()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ODE_System::solve </td>
-          <td>(</td>
-          <td class="paramtype">Solver_type&#160;</td>
-          <td class="paramname"><em>solver_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>M</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>M</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>Call the solvers to solve the system and write the solution to member solution<br />
-</p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Pure virtual method. Call the solvers to solve the system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">M</td><td>number of time steps </td></tr>
-    <tr><td class="paramname">solver_type</td><td>enum type including FwdEuler, AB, RK4 </td></tr>
   </table>
   </dd>
 </dl>
 
+<p>Implemented in <a class="el" href="class_r_k_system4th___system.html#ae36715c58bf1afc191394185f36eb611">RKSystem4th_System</a>, <a class="el" href="class_adams___bashforth___system.html#acaf33d4f9f715a20a106f9029135cfe6">Adams_Bashforth_System</a>, and <a class="el" href="class_forward_euler___system.html#a52532a83a016d8478a7c458881b214b4">ForwardEuler_System</a>.</p>
+
 </div>
 </div>
-<a id="a5220baf5d3f6df54b78bb1ef5079e170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5220baf5d3f6df54b78bb1ef5079e170">&#9670;&nbsp;</a></span>write_solution()</h2>
+<a id="ad07810b15fa1d891b64a83812433fef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07810b15fa1d891b64a83812433fef6">&#9670;&nbsp;</a></span>write_solution()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,12 +204,6 @@ Protected Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>filetype</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -330,156 +218,17 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Output the solution as filetype given by the user<br />
-</p><dl class="params"><dt>Parameters</dt><dd>
+. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">precision</td><td>number of significant numbers<br />
 </td></tr>
-    <tr><td class="paramname">filetype</td><td>available: csv, dat,txt </td></tr>
+    <tr><td class="paramname">filename</td><td>name of the file in form of a string </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a632009677e80b62a1996e842398bf8b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a632009677e80b62a1996e842398bf8b6">&#9670;&nbsp;</a></span>A</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Matrix ODE_System::A</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Matrix A as defined in the problem </p>
-
-</div>
-</div>
-<a id="a2dee2a4b3468547c3ddab15edfc8ddfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dee2a4b3468547c3ddab15edfc8ddfd">&#9670;&nbsp;</a></span>g</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Funpointer ODE_System::g</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Function pointer storing the function g as defined in the problem </p>
-
-</div>
-</div>
-<a id="ab2504680346a353e353f147f1ad9c51d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2504680346a353e353f147f1ad9c51d">&#9670;&nbsp;</a></span>solution</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Matrix ODE_System::solution</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Matrix storing the solution<br />
-ith row = solution vector at ith time step<br />
-jth col = solution of the jth component at all time steps </p>
-
-</div>
-</div>
-<a id="a1947b357608babc98c5e79d645e24c3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1947b357608babc98c5e79d645e24c3c">&#9670;&nbsp;</a></span>t0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Real ODE_System::t0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Initial time </p>
-
-</div>
-</div>
-<a id="a5c5a0dd9f04dfb8d8a84d49b741773af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c5a0dd9f04dfb8d8a84d49b741773af">&#9670;&nbsp;</a></span>tn</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Real ODE_System::tn</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>End time </p>
-
-</div>
-</div>
-<a id="a1379137a4480e5861fd1911bc061f908"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1379137a4480e5861fd1911bc061f908">&#9670;&nbsp;</a></span>y00</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector ODE_System::y00</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Initial condition </p>
 
 </div>
 </div>

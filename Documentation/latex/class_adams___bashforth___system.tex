@@ -1,0 +1,71 @@
+\hypertarget{class_adams___bashforth___system}{}\section{Adams\+\_\+\+Bashforth\+\_\+\+System Class Reference}
+\label{class_adams___bashforth___system}\index{Adams\+\_\+\+Bashforth\+\_\+\+System@{Adams\+\_\+\+Bashforth\+\_\+\+System}}
+
+
+Inheritance of class \mbox{\hyperlink{class_o_d_e___system}{O\+D\+E\+\_\+\+System}}\+: Solving the vectorial system by means of Adams Bashforth method.  
+
+
+
+
+{\ttfamily \#include $<$O\+D\+E\+\_\+\+System.\+h$>$}
+
+Inheritance diagram for Adams\+\_\+\+Bashforth\+\_\+\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_adams___bashforth___system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_adams___bashforth___system_a5842d9c511fdf335526ed2a65bafe986}\label{class_adams___bashforth___system_a5842d9c511fdf335526ed2a65bafe986}} 
+\mbox{\hyperlink{class_adams___bashforth___system_a5842d9c511fdf335526ed2a65bafe986}{Adams\+\_\+\+Bashforth\+\_\+\+System}} (double \mbox{\hyperlink{class_o_d_e___system_a1947b357608babc98c5e79d645e24c3c}{t0}}, double \mbox{\hyperlink{class_o_d_e___system_a5c5a0dd9f04dfb8d8a84d49b741773af}{tn}}, const Vector \&\mbox{\hyperlink{class_o_d_e___system_a1379137a4480e5861fd1911bc061f908}{y00}}, const Matrix \&\mbox{\hyperlink{class_o_d_e___system_a632009677e80b62a1996e842398bf8b6}{A}}, Vector \mbox{\hyperlink{class_o_d_e___system_a2dee2a4b3468547c3ddab15edfc8ddfd}{g}}(Real), int \mbox{\hyperlink{class_adams___bashforth___system_abc285f795f629737fb82c223b896c5e8}{step}})
+\begin{DoxyCompactList}\small\item\em Constructor. Initialize data sturcture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_adams___bashforth___system_af183f3376f969b50d1a09305a5bff62b}\label{class_adams___bashforth___system_af183f3376f969b50d1a09305a5bff62b}} 
+\mbox{\hyperlink{class_adams___bashforth___system_af183f3376f969b50d1a09305a5bff62b}{$\sim$\+Adams\+\_\+\+Bashforth\+\_\+\+System}} () override
+\begin{DoxyCompactList}\small\item\em Destructor. Deallocate memory used by std\+::vector objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_adams___bashforth___system_acaf33d4f9f715a20a106f9029135cfe6}{solve}} (int M) override
+\begin{DoxyCompactList}\small\item\em Implement Adams Bashforth method and store the solution at all time steps in the attribute solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_adams___bashforth___system_abc285f795f629737fb82c223b896c5e8}\label{class_adams___bashforth___system_abc285f795f629737fb82c223b896c5e8}} 
+int \mbox{\hyperlink{class_adams___bashforth___system_abc285f795f629737fb82c223b896c5e8}{step}}
+\begin{DoxyCompactList}\small\item\em step order of the method \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Inheritance of class \mbox{\hyperlink{class_o_d_e___system}{O\+D\+E\+\_\+\+System}}\+: Solving the vectorial system by means of Adams Bashforth method. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_adams___bashforth___system_acaf33d4f9f715a20a106f9029135cfe6}\label{class_adams___bashforth___system_acaf33d4f9f715a20a106f9029135cfe6}} 
+\index{Adams\+\_\+\+Bashforth\+\_\+\+System@{Adams\+\_\+\+Bashforth\+\_\+\+System}!solve@{solve}}
+\index{solve@{solve}!Adams\+\_\+\+Bashforth\+\_\+\+System@{Adams\+\_\+\+Bashforth\+\_\+\+System}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Adams\+\_\+\+Bashforth\+\_\+\+System\+::solve (\begin{DoxyParamCaption}\item[{int}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implement Adams Bashforth method and store the solution at all time steps in the attribute solution. 
+
+f(t,y)=A$\ast$y+g(t)~\newline
+step=1\+: Adams Bashforth method is the same as Forward Euler method. ~\newline
+step=2\+: y\+\_\+\{n+2\}=y\+\_\+\{n+1\}+h$\ast$(3/2$\ast$f(t\+\_\+\{n+1\},y\+\_\+\{n+1\})-\/1/2$\ast$f(t\+\_\+n,y\+\_\+n)) ~\newline
+step=3\+: y\+\_\+\{n+3\}=y\+\_\+\{n+2\}+h$\ast$(23/12$\ast$f(t\+\_\+\{n+2\},y\+\_\+\{n+2\})-\/16/12$\ast$f(t\+\_\+\{n+1\},y\+\_\+\{n+1\})+5/12$\ast$f(t\+\_\+n,y\+\_\+n))~\newline
+step=4\+: y\+\_\+\{n+4\}=y\+\_\+\{n+3\}+h$\ast$(55/24$\ast$f(t\+\_\+\{n+3\},y\+\_\+\{n+3\})-\/59/24$\ast$f(t\+\_\+\{n+2\},y\+\_\+\{n+2\})+37/24$\ast$f(t\+\_\+\{n+1\},y\+\_\+\{n+1\})-\/9/24$\ast$f(t\+\_\+n,y\+\_\+n)) ~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em M} & number of time steps \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_o_d_e___system_a5fe78282ecf67d851f1a2363a028e6dd}{O\+D\+E\+\_\+\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jiahuawu/\+Desktop/\+O\+D\+E\+\_\+\+Solver/O\+D\+E\+\_\+\+System.\+h\item 
+/\+Users/jiahuawu/\+Desktop/\+O\+D\+E\+\_\+\+Solver/O\+D\+E\+\_\+\+System.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{class_forward_euler___system}{}\section{Forward\+Euler\+\_\+\+System Class Reference}
+\label{class_forward_euler___system}\index{Forward\+Euler\+\_\+\+System@{Forward\+Euler\+\_\+\+System}}
+
+
+Inheritance of class \mbox{\hyperlink{class_o_d_e___system}{O\+D\+E\+\_\+\+System}}\+: Solving the vectorial system by means of forward Euler method.  
+
+
+
+
+{\ttfamily \#include $<$O\+D\+E\+\_\+\+System.\+h$>$}
+
+Inheritance diagram for Forward\+Euler\+\_\+\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_forward_euler___system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_forward_euler___system_a346bc0f2ebda791edd4cea34761cc7f7}\label{class_forward_euler___system_a346bc0f2ebda791edd4cea34761cc7f7}} 
+\mbox{\hyperlink{class_forward_euler___system_a346bc0f2ebda791edd4cea34761cc7f7}{Forward\+Euler\+\_\+\+System}} (double \mbox{\hyperlink{class_o_d_e___system_a1947b357608babc98c5e79d645e24c3c}{t0}}, double \mbox{\hyperlink{class_o_d_e___system_a5c5a0dd9f04dfb8d8a84d49b741773af}{tn}}, const Vector \&\mbox{\hyperlink{class_o_d_e___system_a1379137a4480e5861fd1911bc061f908}{y00}}, const Matrix \&\mbox{\hyperlink{class_o_d_e___system_a632009677e80b62a1996e842398bf8b6}{A}}, Vector \mbox{\hyperlink{class_o_d_e___system_a2dee2a4b3468547c3ddab15edfc8ddfd}{g}}(Real))
+\begin{DoxyCompactList}\small\item\em Constructor. Initialize data sturcture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_forward_euler___system_a97a3dd10d62f962b537ac616e84463a5}\label{class_forward_euler___system_a97a3dd10d62f962b537ac616e84463a5}} 
+\mbox{\hyperlink{class_forward_euler___system_a97a3dd10d62f962b537ac616e84463a5}{$\sim$\+Forward\+Euler\+\_\+\+System}} () override
+\begin{DoxyCompactList}\small\item\em Destructor. Deallocate memory used by std\+::vector objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_forward_euler___system_a52532a83a016d8478a7c458881b214b4}{solve}} (int M) override
+\begin{DoxyCompactList}\small\item\em Implement explicit forward euler method and store the solution at all time steps in the attribute solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Inheritance of class \mbox{\hyperlink{class_o_d_e___system}{O\+D\+E\+\_\+\+System}}\+: Solving the vectorial system by means of forward Euler method. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_forward_euler___system_a52532a83a016d8478a7c458881b214b4}\label{class_forward_euler___system_a52532a83a016d8478a7c458881b214b4}} 
+\index{Forward\+Euler\+\_\+\+System@{Forward\+Euler\+\_\+\+System}!solve@{solve}}
+\index{solve@{solve}!Forward\+Euler\+\_\+\+System@{Forward\+Euler\+\_\+\+System}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void Forward\+Euler\+\_\+\+System\+::solve (\begin{DoxyParamCaption}\item[{int}]{M }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implement explicit forward euler method and store the solution at all time steps in the attribute solution. 
+
+f(t,y)=A$\ast$y+g(t)~\newline
+y\+\_\+\{n+1\}=y\+\_\+n+f(t\+\_\+n,y\+\_\+n)$\ast$h ~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em M} & number of time steps \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_o_d_e___system_a5fe78282ecf67d851f1a2363a028e6dd}{O\+D\+E\+\_\+\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jiahuawu/\+Desktop/\+O\+D\+E\+\_\+\+Solver/O\+D\+E\+\_\+\+System.\+h\item 
+/\+Users/jiahuawu/\+Desktop/\+O\+D\+E\+\_\+\+Solver/O\+D\+E\+\_\+\+System.\+cpp\end{DoxyCompactItemize}
