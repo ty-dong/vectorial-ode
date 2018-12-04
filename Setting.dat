@@ -1,0 +1,10 @@
+t0 = 1 			    # Initial time
+tn = 10 		    # End time
+path_y00 = ./abcdefgh       # Path where y00 is stored
+path_A = ./handsomepath     # Path where A is stored
+delimiter_data = , 	    # [Optional] Delimiter of A and y00, space by default
+M = 29 # number of steps
+name_of_solution = solution # name of solution
+function_type = log 	    # Type of function
+precision = 5 		    # [Optional] precision of output values in the solution matrix
+delimiter_solution = ,      # [Optional] delimiter used in the solution file
