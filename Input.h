@@ -18,7 +18,8 @@ struct Setting{
     string path_A;
     string name_of_solution;
     string function_type;
-    char delimiter = ',';
+    char delimiter_data = ' ';
+    char delimiter_solution = ',';
 };
 
 class Reader{
@@ -44,7 +45,7 @@ protected:
     Vector y;
 
 public:
-    Vector_Reader(const string& path,char delimiter = ',');
+    Vector_Reader(const string& path,char delimiter = ' ');
     ~Vector_Reader() override;
 
     Vector access_vector() const;
@@ -58,7 +59,7 @@ protected:
     Matrix A;
 
 public:
-    Matrix_Reader(const string& path, char delimiter = ',');
+    Matrix_Reader(const string& path, char delimiter = ' ');
     ~Matrix_Reader() override;
 
     Matrix access_matrix() const;
