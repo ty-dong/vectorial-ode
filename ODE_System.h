@@ -16,8 +16,7 @@
 using namespace std;
 
 
-///This abstract class stores essential ingredient of a vectorial ode system
-/// as well as a solution obtained by using specified solver functions.
+///This abstract class stores essential ingredients of a vectorial ode system as well as a solution obtained by using specified solver functions.
 class ODE_System{
 
 public:
