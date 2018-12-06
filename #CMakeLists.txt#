@@ -1,7 +1,0 @@
-include_directories(${CMAKE_CURRENT_SOURCE_DIR})
-
-
-set(Sources test.cpp ODE_System.cpp ODE_solver.cpp)
-set(Headers ODE_System.h ODE_solver.h)
-add_executable(test ${Sources} ${Headers})
-add_executable(readfile readfile.cpp)

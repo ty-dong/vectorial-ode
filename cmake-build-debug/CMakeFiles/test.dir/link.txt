@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/test.dir/test.cpp.o CMakeFiles/test.dir/ODE_System.cpp.o CMakeFiles/test.dir/ODE_solver.cpp.o  -o test 
