@@ -5,7 +5,7 @@
       <config projectName="ODE_Solver" targetName="test" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
@@ -13,74 +13,81 @@
   <component name="ChangeListManager">
     <list default="true" id="c707280c-0de8-40ca-a181-6c9a350c2fbd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Input.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODE_System.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ODE_System.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODE_System.h" beforeDir="false" afterPath="$PROJECT_DIR$/ODE_System.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODE_solver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ODE_solver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ODE_solver.h" beforeDir="false" afterPath="$PROJECT_DIR$/ODE_solver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_System.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_System.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_System.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_System.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_System.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_System.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_System.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_solver.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_solver.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_solver.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_solver.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_solver.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_solver.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ODE_solver.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/superlib.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/superlib.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/superlib.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/superlib.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/superlib.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/superlib.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/superlib.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.cpp.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.cpp.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.cpp.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.cpp.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.cpp.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.cpp.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.cpp.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/ODE_System.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/ODE_System.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/ODE_solver.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/ODE_solver.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/test.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/test.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/_o_d_e___system_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/_o_d_e___system_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/_o_d_e__solver_8h_source.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/_o_d_e__solver_8h_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/annotated.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/annotated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/class_adams___bashforth___system-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/class_adams___bashforth___system-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/class_adams___bashforth___system.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/class_adams___bashforth___system.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/class_forward_euler___system-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/class_forward_euler___system-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/class_forward_euler___system.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/class_forward_euler___system.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/class_o_d_e___system-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/class_o_d_e___system-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/class_o_d_e___system.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/class_o_d_e___system.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/class_r_k_system4th___system-members.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/class_r_k_system4th___system-members.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/class_r_k_system4th___system.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/class_r_k_system4th___system.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/classdimnotmatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/classdimnotmatch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/classordernotmatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/classordernotmatch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/classtimesteppossitive.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/classtimesteppossitive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/dir_e04ae2849dfa520b4ee2c9f7e9ff15de.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/dir_ed25a801ee7d4807f01dcc10d847655a.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/dir_ed25a801ee7d4807f01dcc10d847655a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/functions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/functions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/functions_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/functions_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/functions_vars.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/functions_vars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/hierarchy.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/hierarchy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/menudata.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/menudata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_7.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_9.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/all_a.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/all_a.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/classes_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/classes_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/classes_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/classes_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/classes_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/classes_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/classes_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/classes_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/classes_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/classes_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/functions_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/functions_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/functions_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/functions_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/functions_6.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/functions_6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/variables_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/variables_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/variables_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/variables_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/html/search/variables_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/html/search/variables_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/annotated.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/annotated.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/class_adams___bashforth___system.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/class_adams___bashforth___system.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/class_forward_euler___system.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/class_forward_euler___system.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/class_o_d_e___system.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/class_o_d_e___system.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/class_r_k_system4th___system.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/class_r_k_system4th___system.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/classdimnotmatch.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/classdimnotmatch.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/classordernotmatch.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/classordernotmatch.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/classtimesteppossitive.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/classtimesteppossitive.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/hierarchy.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/hierarchy.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/latex/refman.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ODE_System.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ODE_System.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ODE_solver.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ODE_solver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Setting.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_defined_g.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/src/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,38 +99,41 @@
     <session id="-571197242">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="24" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="9" />
+          <entry key="project.open.time.3" value="13" />
           <entry key="project.open.time.4" value="5" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="6" />
-          <entry key="h" value="6" />
-          <entry key="txt" value="1" />
+          <entry key="cpp" value="11" />
+          <entry key="h" value="12" />
+          <entry key="txt" value="5" />
+          <entry key="txt#" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="12" />
+          <entry key="CMakeLists.txt" value="5" />
+          <entry key="ObjectiveC" value="23" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="862" />
-          <entry key="h" value="3551" />
-          <entry key="txt" value="82" />
+          <entry key="cpp" value="1020" />
+          <entry key="h" value="3741" />
+          <entry key="txt" value="569" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="82" />
-          <entry key="ObjectiveC" value="4413" />
+          <entry key="CMakeLists.txt" value="569" />
+          <entry key="Doxygen file" value="1" />
+          <entry key="ObjectiveC" value="4760" />
         </counts>
       </usages-collector>
     </session>
@@ -172,13 +182,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.cpp">
+        <entry file="file://$PROJECT_DIR$/src/Input.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-              <folding>
-                <element signature="e#44#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -186,35 +193,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Input.h">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="113" column="35" lean-forward="true" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Input.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="270">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#155#189#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ODE_System.h">
+        <entry file="file://$PROJECT_DIR$/include/ODE_solver.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state>
+              <folding>
+                <element signature="e#103#122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/ODE_System.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding>
                 <element signature="e#78#95#0" expanded="true" />
               </folding>
@@ -223,28 +235,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ODE_System.cpp">
+        <entry file="file://$PROJECT_DIR$/include/Input.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1545">
-              <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#99#122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ODE_solver.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1845">
+              <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+              <folding>
+                <element signature="e#40#59#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+        <entry file="file://$PROJECT_DIR$/src/ODE_System.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="44" column="81" lean-forward="true" selection-start-line="44" selection-start-column="81" selection-end-line="44" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Setting.dat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="330">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="e#153#187#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -264,7 +285,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/test.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/readfile.cpp" />
         <option value="$PROJECT_DIR$/ODE_solver.h" />
@@ -272,6 +292,15 @@
         <option value="$PROJECT_DIR$/ODE_System.h" />
         <option value="$PROJECT_DIR$/ODE_System.cpp" />
         <option value="$PROJECT_DIR$/Input.cpp" />
+        <option value="$PROJECT_DIR$/Input.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/User_defined_g.h" />
+        <option value="$PROJECT_DIR$/headers/Input.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/Input.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/ODE_System.cpp" />
+        <option value="$PROJECT_DIR$/src/ODE_solver.cpp" />
       </list>
     </option>
   </component>
@@ -287,11 +316,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="152" />
-    <option name="y" value="306" />
-    <option name="width" value="852" />
-    <option name="height" value="578" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -301,6 +329,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,15 +341,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="settings&#9;ACTION&#9;Database.Settings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.stylesheets" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -334,7 +363,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Build All">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -386,11 +415,16 @@
       <workItem from="1543831912103" duration="683000" />
       <workItem from="1544039632331" duration="7229000" />
       <workItem from="1544085605682" duration="4222000" />
+      <workItem from="1544092934740" duration="976000" />
+      <workItem from="1544096373564" duration="517000" />
+      <workItem from="1544097750077" duration="612000" />
+      <workItem from="1544098393466" duration="3529000" />
+      <workItem from="1544103352684" duration="308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55304000" />
+    <option name="totallyTimeSpent" value="61246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,10 +436,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="31" width="1366" height="740" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23975721" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25751072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -419,8 +452,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.21533442" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.18674698" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -456,89 +489,90 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/readfile.cpp">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/readfile.cpp" />
+    <entry file="file://$PROJECT_DIR$/ODE_solver.cpp" />
+    <entry file="file://$PROJECT_DIR$/test.cpp" />
+    <entry file="file://$PROJECT_DIR$/#CMakeLists.txt#" />
+    <entry file="file://$PROJECT_DIR$/Input.h" />
+    <entry file="file://$PROJECT_DIR$/Input.cpp" />
+    <entry file="file://$PROJECT_DIR$/User_defined_g.h" />
+    <entry file="file://$PROJECT_DIR$/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/ODE_solver.h" />
+    <entry file="file://$PROJECT_DIR$/ODE_System.cpp" />
+    <entry file="file://$PROJECT_DIR$/ODE_System.h" />
+    <entry file="file://$PROJECT_DIR$/Setting.dat" />
+    <entry file="file://$PROJECT_DIR$/headers/Input.h" />
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/src/Input.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="270">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ODE_solver.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="149" column="5" lean-forward="true" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.cpp">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
-            <element signature="e#44#61#0" expanded="true" />
+            <element signature="e#155#189#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ODE_solver.h">
+    <entry file="file://$PROJECT_DIR$/include/ODE_solver.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state>
           <folding>
             <element signature="e#103#122#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/include/Input.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#99#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Setting.dat">
+    <entry file="file://$PROJECT_DIR$/src/ODE_System.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#153#187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/include/ODE_System.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="44" column="81" lean-forward="true" selection-start-line="44" selection-start-column="81" selection-end-line="44" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ODE_System.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ODE_System.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding>
             <element signature="e#78#95#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Input.h">
+    <entry file="file://$PROJECT_DIR$/src/ODE_solver.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="113" column="35" lean-forward="true" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Input.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="1845">
+          <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+          <folding>
+            <element signature="e#40#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -9,10 +9,10 @@
 #include <string>
 
 // Local include
-#include "ODE_System.h"
-#include "ODE_solver.h"
-#include "Input.h"
-#include "User_defined_g.h"
+#include "../include/ODE_System.h"
+#include "../include/ODE_solver.h"
+#include "../include/Input.h"
+#include "../Settings/User_defined_g.h"
 using namespace std;
 
 int main(int argc, char *argv[]){

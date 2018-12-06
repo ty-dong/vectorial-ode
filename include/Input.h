@@ -18,7 +18,7 @@ struct Setting{
     string path_y00;
     string path_A;
     string name_of_solution;
-    string function_type;
+    string function_path;
     char delimiter_data = ' ';
     char delimiter_solution = ',';
 };
@@ -64,7 +64,7 @@ protected:
 public:
 
     /// \brief Constructor. Initialize data structure with the input arguments
-    Vector_Reader(const string& path,char delimiter = ' ');
+    explicit Vector_Reader(const string& path,char delimiter = ' ');
 
     /// \brief Destructor. Deallocate the memory used by the vector attribute.
     ~Vector_Reader() override;
@@ -86,7 +86,7 @@ protected:
 
 public:
     /// \brief Constructor. Initialize data structure with the input arguments
-    Matrix_Reader(const string& path, char delimiter = ' ');
+    explicit Matrix_Reader(const string& path, char delimiter = ' ');
 
     /// \brief Destructor. Deallocate the memory used by the Matrix attribute
     ~Matrix_Reader() override;
@@ -115,6 +115,11 @@ public:
 
     /// \brief Read the file from the path attribute and assign it to the setting attribute
     void read_in() override;
+
+};
+
+class function_reader : public Reader{
+protected:
 
 };
 

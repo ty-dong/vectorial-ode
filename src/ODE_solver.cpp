@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 #include <assert.h>
-#include <ODE_solver.h>
+#include "../include/ODE_solver.h"
 using namespace std;
 
 
@@ -98,7 +98,6 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
                 solution.push_back(solution[i+1]+h*(1.5*f2-0.5*f1));
             }
             return solution;
-            break;
         case 3:
             solution.push_back(y00);
             solution.push_back(y00);
@@ -110,7 +109,6 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
                 solution.push_back(solution[i+2]+h*(23.0/12*f3-16.0/12*f2+5.0/12*f1));
             }
             return solution;
-            break;
         case 4:
             solution.push_back(y00);
             solution.push_back(y00);
@@ -124,7 +122,6 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
                 solution.push_back(solution[i+3]+h*(55.0/24*f4-59.0/24*f3+37.0/24*f2-9.0/24*f1));
             }
             return solution;
-            break;
         default:
             throw ordernotmatch();
     }

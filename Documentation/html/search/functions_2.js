@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ode_5fsystem',['ODE_System',['../class_o_d_e___system.html#a39f84fa09d28b6ecf4de1e57b480a568',1,'ODE_System']]]
+  ['forwardeuler_5fsystem',['ForwardEuler_System',['../class_forward_euler___system.html#aafa4f24d552bc1224326d4006315bb21',1,'ForwardEuler_System']]]
 ];

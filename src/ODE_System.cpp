@@ -9,8 +9,8 @@
 #include <fstream>
 
 /// local include
-#include "ODE_solver.h"
-#include "ODE_System.h"
+#include "../include/ODE_solver.h"
+#include "../include/ODE_System.h"
 using namespace std;
 
 
@@ -20,8 +20,6 @@ ODE_System::ODE_System(Real t0, Real tn,const Vector& y00, const Matrix& A, Vect
     if(A[0].size() != y00.size()) {
         cerr << "Error: Mismatch of dimension between Matrix A and vector variable.\n" << endl;
     }
-    // Initialize function pointer
-   // ODE_System::g = g;
 }
 
 ODE_System::~ODE_System() {

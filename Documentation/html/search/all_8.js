@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['write_5fsolution',['write_solution',['../class_o_d_e___system.html#ad07810b15fa1d891b64a83812433fef6',1,'ODE_System']]]
+  ['setting',['Setting',['../struct_setting.html',1,'Setting'],['../class_setting___reader.html#a5684da80f00261842f462606a1bfd5c8',1,'Setting_Reader::setting()']]],
+  ['setting_5freader',['Setting_Reader',['../class_setting___reader.html',1,'Setting_Reader'],['../class_setting___reader.html#a604a6eaadd0d39eb3d6b4ae768b95364',1,'Setting_Reader::Setting_Reader()']]],
+  ['solution',['solution',['../class_o_d_e___system.html#ab2504680346a353e353f147f1ad9c51d',1,'ODE_System']]],
+  ['solve',['solve',['../class_o_d_e___system.html#a78a058382148b745fa458f0b9f52f47c',1,'ODE_System::solve()'],['../class_forward_euler___system.html#a336f60f3804df3323a4729f9ff380b65',1,'ForwardEuler_System::solve()'],['../class_adams___bashforth___system.html#aa34bb9a1367a3b15f606ff49054e9ece',1,'Adams_Bashforth_System::solve()'],['../class_r_k_system4th___system.html#ae7e9125546c6590f50d581f5e6668c82',1,'RKSystem4th_System::solve()']]],
+  ['step',['step',['../class_adams___bashforth___system.html#abc285f795f629737fb82c223b896c5e8',1,'Adams_Bashforth_System']]]
 ];

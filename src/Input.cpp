@@ -12,7 +12,7 @@
 #include <algorithm>
 
 // Local include
-#include "Input.h"
+#include "../include/Input.h"
 using namespace std;
 
 // Constructors
@@ -103,7 +103,7 @@ void Setting_Reader::read_in() {
         else if (parameter == "tn") setting.tn = stod(value);
         else if (parameter == "path_y00") setting.path_y00 = value;
         else if (parameter == "path_A") setting.path_A = value;
-        else if (parameter == "function_type") setting.function_type = value;
+        else if (parameter == "function_path") setting.function_path = value;
         else if (parameter == "number_of_steps") setting.M = stoi(value);
         else if (parameter == "name_of_solution") setting.name_of_solution = value;
         else if (parameter == "precision") setting.precision = stoi(value);
