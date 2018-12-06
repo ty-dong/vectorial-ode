@@ -2,11 +2,6 @@
 // Created by pcsc on 11/30/18.
 //
 
-//
-// Created by Jiahua WU on 23.11.18.
-//
-
-
 
 #include <iostream>
 #include <vector>

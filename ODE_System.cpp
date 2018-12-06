@@ -13,14 +13,15 @@
 #include "ODE_System.h"
 using namespace std;
 
+
 ODE_System::ODE_System(Real t0, Real tn,const Vector& y00, const Matrix& A, Vector g(Real),int M):
-        A(A), t0(t0),tn(tn),y00(y00),solution(1,y00),M(M){
+        A(A), t0(t0),tn(tn),y00(y00),solution(1,y00),M(M),g(g){
     // Check the match of dimension
     if(A[0].size() != y00.size()) {
         cerr << "Error: Mismatch of dimension between Matrix A and vector variable.\n" << endl;
     }
     // Initialize function pointer
-    ODE_System::g = g;
+   // ODE_System::g = g;
 }
 
 ODE_System::~ODE_System() {
@@ -56,6 +57,9 @@ ForwardEuler_System::ForwardEuler_System(Real t0, Real tn,
         ODE_System(t0, tn, y00, A, g, M){}
 
 ForwardEuler_System::~ForwardEuler_System() {
+    for (auto& vector : A){
+        vector.resize(0);
+    }
     A.resize(0);
     solution.resize(0);
     y00.resize(0);
@@ -76,6 +80,9 @@ Adams_Bashforth_System::Adams_Bashforth_System(Real t0, Real tn,
         ODE_System(t0, tn, y00, A, g,M),step(step){}
 
 Adams_Bashforth_System::~Adams_Bashforth_System() {
+    for (auto& vector : A){
+        vector.resize(0);
+    }
     A.resize(0);
     solution.resize(0);
     y00.resize(0);
@@ -98,6 +105,9 @@ RKSystem4th_System::RKSystem4th_System(Real t0, Real tn,
         ODE_System(t0, tn, y00, A, g, M){}
 
 RKSystem4th_System::~RKSystem4th_System() {
+    for (auto& vector : A){
+        vector.resize(0);
+    }
     A.resize(0);
     solution.resize(0);
     y00.resize(0);

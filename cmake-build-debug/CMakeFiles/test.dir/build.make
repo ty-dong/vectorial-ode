@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion-2018.2.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /opt/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jiahuawu/Desktop/ODE_Solver
+CMAKE_SOURCE_DIR = /home/pcsc/project4/ODE_Solver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pcsc/project4/ODE_Solver/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -57,60 +57,60 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/test.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/test.o: ../test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/test.o -c /Users/jiahuawu/Desktop/ODE_Solver/test.cpp
+CMakeFiles/test.dir/test.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/test.cpp.o: ../test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/project4/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/test.cpp.o -c /home/pcsc/project4/ODE_Solver/test.cpp
 
-CMakeFiles/test.dir/test.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/test.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jiahuawu/Desktop/ODE_Solver/test.cpp > CMakeFiles/test.dir/test.i
+CMakeFiles/test.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/project4/ODE_Solver/test.cpp > CMakeFiles/test.dir/test.cpp.i
 
-CMakeFiles/test.dir/test.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/test.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/test.cpp -o CMakeFiles/test.dir/test.s
+CMakeFiles/test.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/project4/ODE_Solver/test.cpp -o CMakeFiles/test.dir/test.cpp.s
 
-CMakeFiles/test.dir/ODE_System.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/ODE_System.o: ../ODE_System.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/ODE_System.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/ODE_System.o -c /Users/jiahuawu/Desktop/ODE_Solver/ODE_System.cpp
+CMakeFiles/test.dir/ODE_System.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/ODE_System.cpp.o: ../ODE_System.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/project4/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/ODE_System.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/ODE_System.cpp.o -c /home/pcsc/project4/ODE_Solver/ODE_System.cpp
 
-CMakeFiles/test.dir/ODE_System.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/ODE_System.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jiahuawu/Desktop/ODE_Solver/ODE_System.cpp > CMakeFiles/test.dir/ODE_System.i
+CMakeFiles/test.dir/ODE_System.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/ODE_System.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/project4/ODE_Solver/ODE_System.cpp > CMakeFiles/test.dir/ODE_System.cpp.i
 
-CMakeFiles/test.dir/ODE_System.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/ODE_System.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/ODE_System.cpp -o CMakeFiles/test.dir/ODE_System.s
+CMakeFiles/test.dir/ODE_System.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/ODE_System.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/project4/ODE_Solver/ODE_System.cpp -o CMakeFiles/test.dir/ODE_System.cpp.s
 
-CMakeFiles/test.dir/ODE_solver.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/ODE_solver.o: ../ODE_solver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/ODE_solver.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/ODE_solver.o -c /Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.cpp
+CMakeFiles/test.dir/ODE_solver.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/ODE_solver.cpp.o: ../ODE_solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pcsc/project4/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/ODE_solver.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/ODE_solver.cpp.o -c /home/pcsc/project4/ODE_Solver/ODE_solver.cpp
 
-CMakeFiles/test.dir/ODE_solver.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/ODE_solver.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.cpp > CMakeFiles/test.dir/ODE_solver.i
+CMakeFiles/test.dir/ODE_solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/ODE_solver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pcsc/project4/ODE_Solver/ODE_solver.cpp > CMakeFiles/test.dir/ODE_solver.cpp.i
 
-CMakeFiles/test.dir/ODE_solver.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/ODE_solver.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.cpp -o CMakeFiles/test.dir/ODE_solver.s
+CMakeFiles/test.dir/ODE_solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/ODE_solver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pcsc/project4/ODE_Solver/ODE_solver.cpp -o CMakeFiles/test.dir/ODE_solver.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/test.o" \
-"CMakeFiles/test.dir/ODE_System.o" \
-"CMakeFiles/test.dir/ODE_solver.o"
+"CMakeFiles/test.dir/test.cpp.o" \
+"CMakeFiles/test.dir/ODE_System.cpp.o" \
+"CMakeFiles/test.dir/ODE_solver.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test: CMakeFiles/test.dir/test.o
-test: CMakeFiles/test.dir/ODE_System.o
-test: CMakeFiles/test.dir/ODE_solver.o
+test: CMakeFiles/test.dir/test.cpp.o
+test: CMakeFiles/test.dir/ODE_System.cpp.o
+test: CMakeFiles/test.dir/ODE_solver.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pcsc/project4/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	cd /Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jiahuawu/Desktop/ODE_Solver /Users/jiahuawu/Desktop/ODE_Solver /Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug /Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug /Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pcsc/project4/ODE_Solver/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pcsc/project4/ODE_Solver /home/pcsc/project4/ODE_Solver /home/pcsc/project4/ODE_Solver/cmake-build-debug /home/pcsc/project4/ODE_Solver/cmake-build-debug /home/pcsc/project4/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test.dir/depend
 

@@ -55,7 +55,7 @@ protected:
     /** \brief number of steps*/
     int M;
 
-    /** \brief nitial condition*/
+    /** \brief initial condition*/
     Vector y00;
     /** \brief Function pointer storing the function g as defined in the problem*/
     Funpointer g;
@@ -133,4 +133,5 @@ public:
     void solve() override;
 
 };
+
 #endif //PROJECT_ODE_SYSTEM_H

@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/jiahuawu/Desktop/ODE_Solver/ODE_System.cpp" "/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/ODE_System.o"
-  "/Users/jiahuawu/Desktop/ODE_Solver/ODE_solver.cpp" "/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/ODE_solver.o"
-  "/Users/jiahuawu/Desktop/ODE_Solver/test.cpp" "/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/test.o"
+  "/home/pcsc/project4/ODE_Solver/ODE_System.cpp" "/home/pcsc/project4/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/ODE_System.cpp.o"
+  "/home/pcsc/project4/ODE_Solver/ODE_solver.cpp" "/home/pcsc/project4/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/ODE_solver.cpp.o"
+  "/home/pcsc/project4/ODE_Solver/test.cpp" "/home/pcsc/project4/ODE_Solver/cmake-build-debug/CMakeFiles/test.dir/test.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

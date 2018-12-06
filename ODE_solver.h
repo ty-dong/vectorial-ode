@@ -53,14 +53,14 @@ Vector operator*(double const &h,Vector const & f);
 
 Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M,  Matrix const &A,Vector g(Real));
 /// \brief Implement explicit forward euler method.
-/// @param t_0:initial time  @param t_n:end time  @param y_00 initial condition @param M number of time steps
+/// @param t_0:initial time  @param t_n:end time  @param y_00 initial condition @param M number of steps
 ///f(t,y)=A*y+g(t)
 ///y_{n+1}=y_n+f(t_n,y_n)*h;
 ///@return initial condition and solution after every step are stored in a matrix and returned
 
 Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Matrix const & A,Vector g(Real)) ;
 /// \brief Implement Adams Bashforth method.
-/// @param t_0 initial time  @param t_n end time @param y_00 initial condition  @param M number of time steps
+/// @param t_0 initial time  @param t_n end time @param y_00 initial condition  @param M number of steps
 /// @param step order of the method,at most 4    f(t,y)=A*y+g(t)
 /// step=1: Adams Bashforth method is the same as Forward Euler method.
 /// step=2: y_{n+2}=y_{n+1}+h*(3/2*f(t_{n+1},y_{n+1})-1/2*f(t_n,y_n))
@@ -70,7 +70,7 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
 
 Matrix RKSystem4th(Real t0, Real tn, Vector const & y00, int M, Matrix const &A,Vector g(Real));
 // \brief Implement Adams Bashforth method.
-/// @param t_0 initial time @param t_n end time @param y_00 initial condition  @param M number of time steps
+/// @param t_0 initial time @param t_n end time @param y_00 initial condition  @param M number of steps
 /// f(t,y)=A*y+g(t)
 /// k_1=f(t_n,y_n))
 /// k_2=f(t_n+0.5*h,y_n+0.5*k_1))
