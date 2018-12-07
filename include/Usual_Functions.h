@@ -1,0 +1,8 @@
+//
+// Created by Jiahua WU on 07.12.18.
+//
+
+#ifndef ODE_SOLVER_USUAL_FUNCTIONS_H
+#define ODE_SOLVER_USUAL_FUNCTIONS_H
+
+#endif //ODE_SOLVER_USUAL_FUNCTIONS_H

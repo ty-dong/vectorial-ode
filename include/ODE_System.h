@@ -15,14 +15,29 @@
 #include "ODE_solver.h"
 using namespace std;
 
+///  Inheritance of class exception: deal with dimension incompatible problem
+class dimmismatch:public exception{
+public:
+    virtual const char* what() const throw(){
+        return "The dimension of vector solution and the constant matrix A does not match!\n";
+    }
+};
+
+///  Inheritance of class exception: failure of creating an output file
+class output_failure:public exception{
+public:
+    virtual const char* what() const throw(){
+        return "The output file fails to be created.\n";
+    }
+};
+
+/** \brief Define the function pointer type */
+typedef Vector(*Vec_Funpointer)(Real);
 
 ///This abstract class stores essential ingredients of a vectorial ode system as well as a solution obtained by using specified solver functions.
 class ODE_System{
 
 public:
-
-    /** \brief Define the function pointer type */
-    typedef Vector(*Funpointer)(Real);
 
     /** \brief Constructor. Initializes ODE_System data structures*/
     ODE_System(Real t0, Real tn, const Vector& y00, const Matrix& A, Vector g(Real), int M);
@@ -58,7 +73,7 @@ protected:
     /** \brief initial condition*/
     Vector y00;
     /** \brief Function pointer storing the function g as defined in the problem*/
-    Funpointer g;
+    Vec_Funpointer g;
     /** \brief Matrix A as defined in the problem*/
     Matrix A;
 

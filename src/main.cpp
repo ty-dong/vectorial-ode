@@ -15,6 +15,7 @@
 #include "../Settings/User_defined_g.h"
 using namespace std;
 
+
 int main(int argc, char *argv[]){
     string solver_type(argv[2]);
     string setting_path(argv[1]);
@@ -31,25 +32,49 @@ int main(int argc, char *argv[]){
     v.read_in();
     Matrix A = m.access_matrix();
     Vector y00 = v.access_vector();
-
+    
     ODE_System* system;
     if(solver_type == "ForwardEuler"){
-        system = new ForwardEuler_System(s.t0,s.tn,y00,A,g,s.M);
+        try{
+            system = new ForwardEuler_System(s.t0,s.tn,y00,A,g,s.M);
+        } catch (dimmismatch &e){
+            cout << e.what();
+        }
         system -> solve();
-        system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
+        try{
+            system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
+        } catch(output_failure &e){
+            cout << e.what();
+        }
     }
     else if(solver_type == "Adams_Bashforth"){
         int step;
         cout << "Please input the step order for Adams Bashforth method: ";
         cin >> step;
-        system = new Adams_Bashforth_System(s.t0,s.tn,y00,A,g,step,s.M);
+        try{
+            system = new Adams_Bashforth_System(s.t0,s.tn,y00,A,g,step,s.M);
+        } catch (dimmismatch &e){
+            cout << e.what();
+        }
         system -> solve();
-        system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
+        try{
+            system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
+        } catch(output_failure &e){
+            cout << e.what();
+        }
     }
     else if(solver_type == "RKSystem4th"){
-        system = new RKSystem4th_System(s.t0,s.tn,y00,A,g,s.M);
+        try{
+            system = new RKSystem4th_System(s.t0,s.tn,y00,A,g,s.M);
+        } catch (dimmismatch &e){
+            cout << e.what();
+        }
         system -> solve();
-        system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
+        try{
+            system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
+        } catch(output_failure &e){
+            cout << e.what();
+        }
     }
     else{ cerr << "Invalid Solver type\n";}
 
