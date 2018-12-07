@@ -33,20 +33,20 @@ ODE_System::~ODE_System() {
 
 Matrix ODE_System::access_solution() const { return solution;}
 
-void ODE_System::write_solution(string filename, int precision, char delimiter) {
+void ODE_System::write_solution(string path, int precision, char delimiter) {
     ofstream outFile;
-    outFile.open(filename + ".dat",ios::out);
+    outFile.open(path,ios::out);
     // Check if the file is open as expected
     if (!outFile.is_open()){cerr << "Error: File open failure. Output is unsuccessful.\n"; return;};
-
+    outFile.precision(precision);
     for (auto vector :solution){
-        for (auto value : vector){
-            outFile.precision(precision);
-            outFile << value << delimiter;
+        for (size_t i = 0;i<vector.size()-1;++i){
+                outFile << vector[i]<< delimiter;
         }
+        outFile << vector[vector.size()-1];
         outFile << endl;
     }
-    cout << "Solution is successfully written." << endl ;
+    cout << "Solution is successfully written.\n" << endl ;
     outFile.close();
 }
 

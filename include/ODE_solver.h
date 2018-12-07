@@ -18,7 +18,7 @@ typedef vector<Vector> Matrix;
 class dimnotmatch:public exception{
 public:
    virtual const char* what() const throw(){
-        return "When using + - or * between vectors, the dimension of vectors does not match!";
+        return "When using + - or * between vectors, the dimension of vectors does not match!\n";
    }
 };
 
@@ -26,7 +26,7 @@ public:
 class timesteppossitive:public exception{
 public:
     virtual const char* what() const throw(){
-        return "The input number of time step should be possitive!";
+        return "The input number of time step should be possitive!\n";
     }
 };
 
@@ -34,7 +34,7 @@ public:
 class ordernotmatch:public exception{
 public:
     virtual const char* what() const throw(){
-        return "Only Adams Bashforth method with order 1,2,3,4 can be called!";
+        return "Only Adams Bashforth method with order 1,2,3,4 can be called!\n";
     }
 };
 

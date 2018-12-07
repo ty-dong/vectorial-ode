@@ -15,7 +15,10 @@ typedef vector<Real> Vector;
 typedef vector<Vector> Matrix;
 
 Vector g(Real t){
-    Vector v;
+    Vector v(3,0);
+    v[0] = 2 - t;
+    v[1] = 0;
+    v[2] = 1 - t;
     return v;
 };
 

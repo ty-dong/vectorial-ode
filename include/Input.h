@@ -17,7 +17,7 @@ struct Setting{
     Real tn;
     string path_y00;
     string path_A;
-    string name_of_solution;
+    string path_solution;
     string function_path;
     char delimiter_data = ' ';
     char delimiter_solution = ',';
@@ -115,11 +115,6 @@ public:
 
     /// \brief Read the file from the path attribute and assign it to the setting attribute
     void read_in() override;
-
-};
-
-class function_reader : public Reader{
-protected:
 
 };
 

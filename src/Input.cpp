@@ -105,8 +105,11 @@ void Setting_Reader::read_in() {
         else if (parameter == "path_A") setting.path_A = value;
         else if (parameter == "function_path") setting.function_path = value;
         else if (parameter == "number_of_steps") setting.M = stoi(value);
-        else if (parameter == "name_of_solution") setting.name_of_solution = value;
+        else if (parameter == "path_solution") setting.path_solution = value;
         else if (parameter == "precision") setting.precision = stoi(value);
+        else if (parameter == "M") setting.M = stoi(value);
+
+        // Convert string into char
         else if (parameter == "delimiter_solution") {
             char char_array[10];
             strcpy(char_array,value.c_str());
@@ -117,8 +120,7 @@ void Setting_Reader::read_in() {
             strcpy(char_array,value.c_str());
             setting.delimiter_data = char_array[0];
         }
-        else if (parameter == "M") setting.M = stoi(value);
-        else cerr << "invalid input";
+        else cerr << "Invalid Input\n";
     }
-    read_file.close();
+read_file.close();
 }

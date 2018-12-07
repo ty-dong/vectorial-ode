@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
     if(solver_type == "ForwardEuler"){
         system = new ForwardEuler_System(s.t0,s.tn,y00,A,g,s.M);
         system -> solve();
-        system -> write_solution(s.name_of_solution,s.precision,s.delimiter_solution);
+        system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
     }
     else if(solver_type == "Adams_Bashforth"){
         int step;
@@ -44,14 +44,14 @@ int main(int argc, char *argv[]){
         cin >> step;
         system = new Adams_Bashforth_System(s.t0,s.tn,y00,A,g,step,s.M);
         system -> solve();
-        system -> write_solution(s.name_of_solution,s.precision,s.delimiter_solution);
+        system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
     }
     else if(solver_type == "RKSystem4th"){
         system = new RKSystem4th_System(s.t0,s.tn,y00,A,g,s.M);
         system -> solve();
-        system -> write_solution(s.name_of_solution,s.precision,s.delimiter_solution);
+        system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
     }
-    else{ cerr << "Invalid Solver type";}
+    else{ cerr << "Invalid Solver type\n";}
 
     delete system;
     return 0;
