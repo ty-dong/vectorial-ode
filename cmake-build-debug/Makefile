@@ -123,60 +123,6 @@ test/fast:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-src/Input.o: src/Input.cpp.o
-
-.PHONY : src/Input.o
-
-# target to build an object file
-src/Input.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Input.cpp.o
-.PHONY : src/Input.cpp.o
-
-src/Input.i: src/Input.cpp.i
-
-.PHONY : src/Input.i
-
-# target to preprocess a source file
-src/Input.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Input.cpp.i
-.PHONY : src/Input.cpp.i
-
-src/Input.s: src/Input.cpp.s
-
-.PHONY : src/Input.s
-
-# target to generate assembly for a file
-src/Input.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Input.cpp.s
-.PHONY : src/Input.cpp.s
-
-src/ODE_System.o: src/ODE_System.cpp.o
-
-.PHONY : src/ODE_System.o
-
-# target to build an object file
-src/ODE_System.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ODE_System.cpp.o
-.PHONY : src/ODE_System.cpp.o
-
-src/ODE_System.i: src/ODE_System.cpp.i
-
-.PHONY : src/ODE_System.i
-
-# target to preprocess a source file
-src/ODE_System.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ODE_System.cpp.i
-.PHONY : src/ODE_System.cpp.i
-
-src/ODE_System.s: src/ODE_System.cpp.s
-
-.PHONY : src/ODE_System.s
-
-# target to generate assembly for a file
-src/ODE_System.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ODE_System.cpp.s
-.PHONY : src/ODE_System.cpp.s
-
 src/ODE_solver.o: src/ODE_solver.cpp.o
 
 .PHONY : src/ODE_solver.o
@@ -203,6 +149,60 @@ src/ODE_solver.s: src/ODE_solver.cpp.s
 src/ODE_solver.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ODE_solver.cpp.s
 .PHONY : src/ODE_solver.cpp.s
+
+src/ODE_system.o: src/ODE_system.cpp.o
+
+.PHONY : src/ODE_system.o
+
+# target to build an object file
+src/ODE_system.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ODE_system.cpp.o
+.PHONY : src/ODE_system.cpp.o
+
+src/ODE_system.i: src/ODE_system.cpp.i
+
+.PHONY : src/ODE_system.i
+
+# target to preprocess a source file
+src/ODE_system.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ODE_system.cpp.i
+.PHONY : src/ODE_system.cpp.i
+
+src/ODE_system.s: src/ODE_system.cpp.s
+
+.PHONY : src/ODE_system.s
+
+# target to generate assembly for a file
+src/ODE_system.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/ODE_system.cpp.s
+.PHONY : src/ODE_system.cpp.s
+
+src/input.o: src/input.cpp.o
+
+.PHONY : src/input.o
+
+# target to build an object file
+src/input.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/input.cpp.o
+.PHONY : src/input.cpp.o
+
+src/input.i: src/input.cpp.i
+
+.PHONY : src/input.i
+
+# target to preprocess a source file
+src/input.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/input.cpp.i
+.PHONY : src/input.cpp.i
+
+src/input.s: src/input.cpp.s
+
+.PHONY : src/input.s
+
+# target to generate assembly for a file
+src/input.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/input.cpp.s
+.PHONY : src/input.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -240,15 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... src/Input.o"
-	@echo "... src/Input.i"
-	@echo "... src/Input.s"
-	@echo "... src/ODE_System.o"
-	@echo "... src/ODE_System.i"
-	@echo "... src/ODE_System.s"
 	@echo "... src/ODE_solver.o"
 	@echo "... src/ODE_solver.i"
 	@echo "... src/ODE_solver.s"
+	@echo "... src/ODE_system.o"
+	@echo "... src/ODE_system.i"
+	@echo "... src/ODE_system.s"
+	@echo "... src/input.o"
+	@echo "... src/input.i"
+	@echo "... src/input.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

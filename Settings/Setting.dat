@@ -1,10 +1,10 @@
 t0 = 0 			        # Initial time
 tn = 2 		                # End time
-path_y00 = ../Settings/y00.dat         # Path where y00 is stored
-path_A = ../Settings/A.dat         # Path where A is stored
-path_solution = ../Solution/solution # Path where the solution is stored
+path_y00 = ../settings/y00.dat  # Path where y00 is stored
+path_A = ../settings/A.dat      # Path where A is stored
+path_solution = ../solution/solution # Path where the solution is stored
 delimiter_data = , 	    	   # [Optional] Delimiter of A and y00, space by default
 M = 100                            # number of steps
-function_type = log 	           # Type of function
 precision = 5 		           # [Optional] precision of output values
 delimiter_solution = ,      	   # [Optional] delimiter used in the solution file
+usual_function = 1		   # [Optional] use the usual_function(1) or not(0). 		

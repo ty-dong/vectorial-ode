@@ -70,18 +70,18 @@ CMakeFiles/test.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/src/main.cpp -o CMakeFiles/test.dir/src/main.cpp.s
 
-CMakeFiles/test.dir/src/ODE_System.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/ODE_System.cpp.o: ../src/ODE_System.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/ODE_System.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/ODE_System.cpp.o -c /Users/jiahuawu/Desktop/ODE_Solver/src/ODE_System.cpp
+CMakeFiles/test.dir/src/ODE_system.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/ODE_system.cpp.o: ../src/ODE_system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/ODE_system.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/ODE_system.cpp.o -c /Users/jiahuawu/Desktop/ODE_Solver/src/ODE_system.cpp
 
-CMakeFiles/test.dir/src/ODE_System.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/ODE_System.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jiahuawu/Desktop/ODE_Solver/src/ODE_System.cpp > CMakeFiles/test.dir/src/ODE_System.cpp.i
+CMakeFiles/test.dir/src/ODE_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/ODE_system.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jiahuawu/Desktop/ODE_Solver/src/ODE_system.cpp > CMakeFiles/test.dir/src/ODE_system.cpp.i
 
-CMakeFiles/test.dir/src/ODE_System.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/ODE_System.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/src/ODE_System.cpp -o CMakeFiles/test.dir/src/ODE_System.cpp.s
+CMakeFiles/test.dir/src/ODE_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/ODE_system.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/src/ODE_system.cpp -o CMakeFiles/test.dir/src/ODE_system.cpp.s
 
 CMakeFiles/test.dir/src/ODE_solver.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/ODE_solver.cpp.o: ../src/ODE_solver.cpp
@@ -96,33 +96,33 @@ CMakeFiles/test.dir/src/ODE_solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/ODE_solver.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/src/ODE_solver.cpp -o CMakeFiles/test.dir/src/ODE_solver.cpp.s
 
-CMakeFiles/test.dir/src/Input.cpp.o: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/src/Input.cpp.o: ../src/Input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/Input.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/Input.cpp.o -c /Users/jiahuawu/Desktop/ODE_Solver/src/Input.cpp
+CMakeFiles/test.dir/src/input.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/input.cpp.o: ../src/input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/input.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/src/input.cpp.o -c /Users/jiahuawu/Desktop/ODE_Solver/src/input.cpp
 
-CMakeFiles/test.dir/src/Input.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Input.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jiahuawu/Desktop/ODE_Solver/src/Input.cpp > CMakeFiles/test.dir/src/Input.cpp.i
+CMakeFiles/test.dir/src/input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/input.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jiahuawu/Desktop/ODE_Solver/src/input.cpp > CMakeFiles/test.dir/src/input.cpp.i
 
-CMakeFiles/test.dir/src/Input.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Input.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/src/Input.cpp -o CMakeFiles/test.dir/src/Input.cpp.s
+CMakeFiles/test.dir/src/input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/input.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jiahuawu/Desktop/ODE_Solver/src/input.cpp -o CMakeFiles/test.dir/src/input.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/src/main.cpp.o" \
-"CMakeFiles/test.dir/src/ODE_System.cpp.o" \
+"CMakeFiles/test.dir/src/ODE_system.cpp.o" \
 "CMakeFiles/test.dir/src/ODE_solver.cpp.o" \
-"CMakeFiles/test.dir/src/Input.cpp.o"
+"CMakeFiles/test.dir/src/input.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
 test: CMakeFiles/test.dir/src/main.cpp.o
-test: CMakeFiles/test.dir/src/ODE_System.cpp.o
+test: CMakeFiles/test.dir/src/ODE_system.cpp.o
 test: CMakeFiles/test.dir/src/ODE_solver.cpp.o
-test: CMakeFiles/test.dir/src/Input.cpp.o
+test: CMakeFiles/test.dir/src/input.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jiahuawu/Desktop/ODE_Solver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable test"

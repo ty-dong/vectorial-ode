@@ -82,25 +82,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/Settings/User_defined_g.h">
-			<Option target="test"/>
-		</Unit>
-		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/include/Input.h">
-			<Option target="test"/>
-		</Unit>
-		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/include/ODE_System.h">
-			<Option target="test"/>
-		</Unit>
 		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/include/ODE_solver.h">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/src/Input.cpp">
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/include/ODE_system.h">
 			<Option target="test"/>
 		</Unit>
-		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/src/ODE_System.cpp">
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/include/input.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/include/usual_functions.h">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/settings/user_defined_g.h">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/src/ODE_solver.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/src/ODE_system.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/src/input.cpp">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="/Users/jiahuawu/Desktop/ODE_Solver/src/main.cpp">

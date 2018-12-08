@@ -11,7 +11,7 @@
 #include "../include/ODE_System.h"
 #include "../include/ODE_solver.h"
 #include "./googletest/include/gtest/gtest.h"
-#include "../Settings/User_defined_g.h"
+#include "../include/Usual_functions.h"
 
 Vector sln(Real t);
 Vector ggtest(Real t){
