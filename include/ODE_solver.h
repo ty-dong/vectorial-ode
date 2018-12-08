@@ -41,15 +41,18 @@ public:
 ///  Define operator*: the product of a matrix and a vector.
 Vector operator* (Matrix const &A, Vector const &X);
 
-///  Define operator*: the sum of two vectors.
+///  Define operator+: the sum of two vectors.
 Vector operator + (Vector const &X, Vector const &Y);
 
-
+///  Define operator-: the difference of two vectors.
 Vector operator- (Vector const &X, Vector const &Y);
-///  Define operator*: the difference of two vectors.
 
-Vector operator*(double const &h,Vector const & f);
 ///  Define operator*: the product of a number and a vector.
+Vector operator*(double const &h,Vector const & f);
+
+
+///  Define operator*: the product of two vectors.
+Real operator*(Vector const& h,Vector const & f);
 
 Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M,  Matrix const &A,Vector g(Real));
 /// \brief Implement explicit forward euler method.
