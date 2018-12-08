@@ -15,14 +15,6 @@
 #include "ODE_solver.h"
 using namespace std;
 
-///  Inheritance of class exception: deal with dimension incompatible problem
-class dimmismatch:public exception{
-public:
-    virtual const char* what() const throw(){
-        return "The dimension of vector solution and the constant matrix A does not match!\n";
-    }
-};
-
 ///  Inheritance of class exception: failure of creating an output file
 class output_failure:public exception{
 public:

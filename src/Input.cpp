@@ -13,8 +13,82 @@
 #include <cstring>
 
 // Local include
-#include "../include/Input.h"
+#include "../include/input.h"
 using namespace std;
+
+/// Usual Function Input module
+Matrix Usual_Function_Input(){
+
+    /// @param allparameters all the parameters of functions (sin, cos, exp, polynomial) all stored in this matrix.
+    Matrix allparameters_choice;
+    /// @param choice store the choice of every dimention of function g: 0 for sin, 1 for cos, 2 for exp, 3 for polynomial.
+    Vector choice;
+    ///@param the dimension of vector g(t)
+    int dim;
+
+    cout<<"Please input the dimension of your ODE"<<endl;
+    cin>>dim;
+
+    Vector dim_storer(1,dim);
+
+    /// @param: vector storing the parameter of each component function
+    Vector parameter(3,0);
+    int tmp;
+    int j(0);
+
+    // Use do..while structure to avoid dimension mismatch caused by careless invalid input
+    // Only valid input is taken into account
+    do{
+            cout<<"*************************"<<endl;
+            cout<<"Please input your choice of function g (press Enter after the choice of every dimension)"<<endl;
+            cout<<"0 a*sin(b*t+c)"<<endl;
+            cout<<"1 a*cos(b*t+c)"<<endl;
+            cout<<"2 a*exp(b*t+c)"<<endl;
+            cout<<"3 a*t^2+b*t+c"<<endl;
+            cout<<"4 terminate input process"<<endl;
+            cout<<"If none of above meets your need, please define your function g in settings/user_defined_g.h"<<endl;
+            cout<<"*************************"<<endl;
+
+            cin>>tmp;
+            choice.push_back(tmp);
+            switch(tmp){
+                case 0:
+                    cout<<"Please input the parameters a,b and c of function: a*sin(b*t+c)"<<endl;
+                    cin>>parameter[0]>>parameter[1]>>parameter[2];
+                    allparameters_choice.push_back(parameter);
+                    ++j;
+                    break;
+                case 1:
+                    cout<<"Please input the parameters a,b and c of function: a*cos(b*t+c)"<<endl;
+                    cin>>parameter[0]>>parameter[1]>>parameter[2];
+                    allparameters_choice.push_back(parameter);
+                    ++j;
+                    break;
+                case 2:
+                    cout<<"Please input the parameters a,b and c of function: a*exp(b*t+c)"<<endl;
+                    cin>>parameter[0]>>parameter[1]>>parameter[2];
+                    allparameters_choice.push_back(parameter);
+                    ++j;
+                    break;
+                case 3:
+                    cout<<"Please input the parameters a,b and c of function: a*t^2+b*t+c"<<endl;
+                    cin>>parameter[0]>>parameter[1]>>parameter[2];
+                    allparameters_choice.push_back(parameter);
+                    ++j;
+                    break;
+                case 4:
+                    cerr<<"Program terminated!"<<endl;
+                    j = dim;
+                    break;
+                default:
+                    cerr<<"No matching function types!"<<endl;
+            }
+        } while (j < dim);
+        allparameters_choice.push_back(choice);
+        allparameters_choice.push_back(dim_storer);
+    return allparameters_choice;
+};
+
 
 // Constructors
 Reader::Reader(const string& path): path(path){}
@@ -104,11 +178,11 @@ void Setting_Reader::read_in() {
         else if (parameter == "tn") setting.tn = stod(value);
         else if (parameter == "path_y00") setting.path_y00 = value;
         else if (parameter == "path_A") setting.path_A = value;
-        else if (parameter == "function_path") setting.function_path = value;
         else if (parameter == "number_of_steps") setting.M = stoi(value);
         else if (parameter == "path_solution") setting.path_solution = value;
         else if (parameter == "precision") setting.precision = stoi(value);
         else if (parameter == "M") setting.M = stoi(value);
+        else if (parameter == "usual_function") setting.usual_function = stoi(value);
 
         // Convert string into char
         else if (parameter == "delimiter_solution") {

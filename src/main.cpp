@@ -9,10 +9,11 @@
 #include <string>
 
 // Local include
-#include "../include/ODE_System.h"
+#include "../include/ODE_system.h"
 #include "../include/ODE_solver.h"
-#include "../include/Input.h"
-#include "../Settings/User_defined_g.h"
+#include "../include/input.h"
+#include "../include/usual_functions.h"
+#include "../settings/user_defined_g.h"
 using namespace std;
 
 
@@ -32,14 +33,17 @@ int main(int argc, char *argv[]){
     v.read_in();
     Matrix A = m.access_matrix();
     Vector y00 = v.access_vector();
-    
+
+    // Use usual function or not
+    Vec_Funpointer g;
+    switch (s.usual_function){
+        case 0: g = user_define; break;
+        case 1: g = usual_fun; break;
+    }
+
     ODE_System* system;
     if(solver_type == "ForwardEuler"){
-        try{
-            system = new ForwardEuler_System(s.t0,s.tn,y00,A,g,s.M);
-        } catch (dimmismatch &e){
-            cout << e.what();
-        }
+        system = new ForwardEuler_System(s.t0,s.tn,y00,A,g,s.M);
         system -> solve();
         try{
             system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
@@ -51,11 +55,7 @@ int main(int argc, char *argv[]){
         int step;
         cout << "Please input the step order for Adams Bashforth method: ";
         cin >> step;
-        try{
-            system = new Adams_Bashforth_System(s.t0,s.tn,y00,A,g,step,s.M);
-        } catch (dimmismatch &e){
-            cout << e.what();
-        }
+        system = new Adams_Bashforth_System(s.t0,s.tn,y00,A,g,step,s.M);
         system -> solve();
         try{
             system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);
@@ -64,11 +64,7 @@ int main(int argc, char *argv[]){
         }
     }
     else if(solver_type == "RKSystem4th"){
-        try{
-            system = new RKSystem4th_System(s.t0,s.tn,y00,A,g,s.M);
-        } catch (dimmismatch &e){
-            cout << e.what();
-        }
+        system = new RKSystem4th_System(s.t0,s.tn,y00,A,g,s.M);
         system -> solve();
         try{
             system -> write_solution(s.path_solution,s.precision,s.delimiter_solution);

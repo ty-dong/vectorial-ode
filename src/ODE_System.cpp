@@ -10,17 +10,12 @@
 
 /// local include
 #include "../include/ODE_solver.h"
-#include "../include/ODE_System.h"
+#include "../include/ODE_system.h"
 using namespace std;
 
 
 ODE_System::ODE_System(Real t0, Real tn,const Vector& y00, const Matrix& A, Vector g(Real),int M):
-        A(A), t0(t0),tn(tn),y00(y00),solution(1,y00),M(M),g(g){
-    // Check the match of dimension
-    if(A[0].size() != y00.size()) {
-        cerr << "Error: Mismatch of dimension between Matrix A and vector variable.\n" << endl;
-    }
-}
+        A(A), t0(t0),tn(tn),y00(y00),solution(1,y00),M(M),g(g){}
 
 ODE_System::~ODE_System() {
     for (auto& vector : A){
@@ -37,7 +32,7 @@ void ODE_System::write_solution(string path, int precision, char delimiter) {
     ofstream outFile;
     outFile.open(path,ios::out);
     // Check if the file is open as expected
-    if (!outFile.is_open()){cerr << "Error: File open failure. Output is unsuccessful.\n"; return;};
+    if (!outFile.is_open()){throw output_failure();}
     outFile.precision(precision);
     for (auto vector :solution){
         for (size_t i = 0;i<vector.size()-1;++i){

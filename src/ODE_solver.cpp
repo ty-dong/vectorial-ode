@@ -5,7 +5,6 @@
 
 #include <iostream>
 #include <vector>
-#include <assert.h>
 #include "../include/ODE_solver.h"
 using namespace std;
 

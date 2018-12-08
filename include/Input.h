@@ -13,15 +13,18 @@ using namespace std;
 struct Setting{
     int M;
     int precision = 5;
+    int usual_function = 1;
     Real t0;
     Real tn;
     string path_y00;
     string path_A;
     string path_solution;
-    string function_path;
     char delimiter_data = ' ';
     char delimiter_solution = ',';
 };
+
+/// Usual Function Input module. Return a matrix containing the parameters, the functions choices and the dimension.
+Matrix Usual_Function_Input();
 
 
 ///Abstract class of readers
