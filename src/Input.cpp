@@ -10,6 +10,7 @@
 #include <vector>
 #include <cctype>
 #include <algorithm>
+#include <cstring>
 
 // Local include
 #include "../include/Input.h"
