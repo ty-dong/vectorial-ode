@@ -1,0 +1,89 @@
+\hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info}{}\section{testing\+:\+:internal\+:\+:Parameterized\+Test\+Case\+Info$<$ Test\+Case $>$ Class Template Reference}
+\label{classtesting_1_1internal_1_1_parameterized_test_case_info}\index{testing\+::internal\+::\+Parameterized\+Test\+Case\+Info$<$ Test\+Case $>$@{testing\+::internal\+::\+Parameterized\+Test\+Case\+Info$<$ Test\+Case $>$}}
+Inheritance diagram for testing\+:\+:internal\+:\+:Parameterized\+Test\+Case\+Info$<$ Test\+Case $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtesting_1_1internal_1_1_parameterized_test_case_info}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtesting_1_1internal_1_1_parameterized_test_case_info_1_1_instantiation_info}{Instantiation\+Info}}
+\item 
+struct \mbox{\hyperlink{structtesting_1_1internal_1_1_parameterized_test_case_info_1_1_test_info}{Test\+Info}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a643a87e178bf92a4246ce21054e44b96}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a643a87e178bf92a4246ce21054e44b96}} 
+typedef Test\+Case\+::\+Param\+Type {\bfseries Param\+Type}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_aed6c5184cb8f94cec73e9d7c4b7fa2ce}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_aed6c5184cb8f94cec73e9d7c4b7fa2ce}} 
+typedef \mbox{\hyperlink{structtesting_1_1internal_1_1_param_name_gen_func}{Param\+Name\+Gen\+Func}}$<$ Param\+Type $>$\+::Type {\bfseries Param\+Name\+Generator\+Func}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a2f6a423f7ae8c7ac24b468538693aa26}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a2f6a423f7ae8c7ac24b468538693aa26}} 
+typedef {\bfseries Param\+Generator} (Generator\+Creation\+Func)()
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a6d19f368428260bd5c6e608b4d3fc6af}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a6d19f368428260bd5c6e608b4d3fc6af}} 
+{\bfseries Parameterized\+Test\+Case\+Info} (const char $\ast$name, \mbox{\hyperlink{structtesting_1_1internal_1_1_code_location}{Code\+Location}} code\+\_\+location)
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a8a9eafc7654b154165f131974397e200}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a8a9eafc7654b154165f131974397e200}} 
+virtual const std\+::string \& {\bfseries Get\+Test\+Case\+Name} () const
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a16ed77e95a6042c722d0029744acfc33}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a16ed77e95a6042c722d0029744acfc33}} 
+virtual Type\+Id {\bfseries Get\+Test\+Case\+Type\+Id} () const
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a3e557c888ec5e23b138c2ff254db15e5}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a3e557c888ec5e23b138c2ff254db15e5}} 
+void {\bfseries Add\+Test\+Pattern} (const char $\ast$test\+\_\+case\+\_\+name, const char $\ast$test\+\_\+base\+\_\+name, \mbox{\hyperlink{classtesting_1_1internal_1_1_test_meta_factory_base}{Test\+Meta\+Factory\+Base}}$<$ Param\+Type $>$ $\ast$meta\+\_\+factory)
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_adefded091e3f20ac3a758029caea3eab}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_adefded091e3f20ac3a758029caea3eab}} 
+int {\bfseries Add\+Test\+Case\+Instantiation} (const std\+::string \&instantiation\+\_\+name, Generator\+Creation\+Func $\ast$func, Param\+Name\+Generator\+Func $\ast$name\+\_\+func, const char $\ast$file, int line)
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a7e118820b3074ce70c0440e2e49a50a1}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a7e118820b3074ce70c0440e2e49a50a1}} 
+virtual void {\bfseries Register\+Tests} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_acf046d18ef05ec704cfac856e39dc181}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_acf046d18ef05ec704cfac856e39dc181}} 
+using {\bfseries Test\+Info\+Container} = \+::std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structtesting_1_1internal_1_1_parameterized_test_case_info_1_1_test_info}{Test\+Info}} $>$ $>$
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_acf93d7726e6d55e312ac89c51379110c}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_acf93d7726e6d55e312ac89c51379110c}} 
+typedef \+::std\+::vector$<$ \mbox{\hyperlink{structtesting_1_1internal_1_1_parameterized_test_case_info_1_1_instantiation_info}{Instantiation\+Info}} $>$ {\bfseries Instantiation\+Container}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a838031a1ebad654ac47be69ec5ec3f0a}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a838031a1ebad654ac47be69ec5ec3f0a}} 
+{\bfseries G\+T\+E\+S\+T\+\_\+\+D\+I\+S\+A\+L\+L\+O\+W\+\_\+\+C\+O\+P\+Y\+\_\+\+A\+N\+D\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+} (\mbox{\hyperlink{classtesting_1_1internal_1_1_parameterized_test_case_info}{Parameterized\+Test\+Case\+Info}})
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a2e5ef36510c01934c07889a5f60e9ed8}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a2e5ef36510c01934c07889a5f60e9ed8}} 
+static bool {\bfseries Is\+Valid\+Param\+Name} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a29b78b287552ba36a896e9352e86440c}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a29b78b287552ba36a896e9352e86440c}} 
+const std\+::string {\bfseries test\+\_\+case\+\_\+name\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a7eb114d9580001f9cb978684dfa8e0ee}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a7eb114d9580001f9cb978684dfa8e0ee}} 
+\mbox{\hyperlink{structtesting_1_1internal_1_1_code_location}{Code\+Location}} {\bfseries code\+\_\+location\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a561fad516239cf6427df6915ba3182e9}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a561fad516239cf6427df6915ba3182e9}} 
+Test\+Info\+Container {\bfseries tests\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_parameterized_test_case_info_a2e86fd404a78daa1f1169bf689c4b3f4}\label{classtesting_1_1internal_1_1_parameterized_test_case_info_a2e86fd404a78daa1f1169bf689c4b3f4}} 
+Instantiation\+Container {\bfseries instantiations\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jiahuawu/\+Desktop/\+O\+D\+E\+\_\+\+Solver/test/googletest/include/gtest/internal/gtest-\/param-\/util.\+h\end{DoxyCompactItemize}

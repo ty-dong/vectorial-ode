@@ -62,7 +62,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_o_d_e___system-members.html">List of all members</a>  </div>
@@ -74,7 +73,7 @@ $(function() {
 <p>This abstract class stores essential ingredients of a vectorial ode system as well as a solution obtained by using specified solver functions.  
  <a href="class_o_d_e___system.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_o_d_e___system_8h_source.html">ODE_System.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_o_d_e__system_8h_source.html">ODE_system.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ODE_System:</div>
 <div class="dyncontent">
@@ -87,17 +86,10 @@ Inheritance diagram for ODE_System:</div>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a9ff6775dafbba78d49f164174aa7074e"><td class="memItemLeft" align="right" valign="top"><a id="a9ff6775dafbba78d49f164174aa7074e"></a>
-typedef Vector(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a9ff6775dafbba78d49f164174aa7074e">Funpointer</a>) (Real)</td></tr>
-<tr class="memdesc:a9ff6775dafbba78d49f164174aa7074e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the function pointer type. <br /></td></tr>
-<tr class="separator:a9ff6775dafbba78d49f164174aa7074e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d26d35aa660c12699438ef46ae6cb1f"><td class="memItemLeft" align="right" valign="top"><a id="a0d26d35aa660c12699438ef46ae6cb1f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a0d26d35aa660c12699438ef46ae6cb1f">ODE_System</a> (Real <a class="el" href="class_o_d_e___system.html#a1947b357608babc98c5e79d645e24c3c">t0</a>, Real <a class="el" href="class_o_d_e___system.html#a5c5a0dd9f04dfb8d8a84d49b741773af">tn</a>, const Vector &amp;<a class="el" href="class_o_d_e___system.html#a1379137a4480e5861fd1911bc061f908">y00</a>, const Matrix &amp;<a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a>, Vector <a class="el" href="class_o_d_e___system.html#a2dee2a4b3468547c3ddab15edfc8ddfd">g</a>(Real), int <a class="el" href="class_o_d_e___system.html#a46e5ee402ffc7c500dccad753a1fba36">M</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a0d26d35aa660c12699438ef46ae6cb1f">ODE_System</a> (Real <a class="el" href="class_o_d_e___system.html#a1947b357608babc98c5e79d645e24c3c">t0</a>, Real <a class="el" href="class_o_d_e___system.html#a5c5a0dd9f04dfb8d8a84d49b741773af">tn</a>, const Vector &amp;<a class="el" href="class_o_d_e___system.html#a1379137a4480e5861fd1911bc061f908">y00</a>, const Matrix &amp;<a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a>, Vector <a class="el" href="class_o_d_e___system.html#a5a294fda765e6cbfd7dfda43755d2c55">g</a>(Real), int <a class="el" href="class_o_d_e___system.html#a46e5ee402ffc7c500dccad753a1fba36">M</a>)</td></tr>
 <tr class="memdesc:a0d26d35aa660c12699438ef46ae6cb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Initializes <a class="el" href="class_o_d_e___system.html" title="This abstract class stores essential ingredients of a vectorial ode system as well as a solution obta...">ODE_System</a> data structures. <br /></td></tr>
 <tr class="separator:a0d26d35aa660c12699438ef46ae6cb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d38890ff0950344d4d34b9fab6a956b"><td class="memItemLeft" align="right" valign="top"><a id="a1d38890ff0950344d4d34b9fab6a956b"></a>
@@ -108,8 +100,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#aebb5a7971ef1c429077155eec549f713">access_solution</a> () const</td></tr>
 <tr class="memdesc:aebb5a7971ef1c429077155eec549f713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accessor to get the solution. <br /></td></tr>
 <tr class="separator:aebb5a7971ef1c429077155eec549f713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78a058382148b745fa458f0b9f52f47c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a78a058382148b745fa458f0b9f52f47c">solve</a> ()=0</td></tr>
-<tr class="memdesc:a78a058382148b745fa458f0b9f52f47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method. Call the solvers to solve the system.  <a href="#a78a058382148b745fa458f0b9f52f47c">More...</a><br /></td></tr>
+<tr class="memitem:a78a058382148b745fa458f0b9f52f47c"><td class="memItemLeft" align="right" valign="top"><a id="a78a058382148b745fa458f0b9f52f47c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a78a058382148b745fa458f0b9f52f47c">solve</a> ()=0</td></tr>
+<tr class="memdesc:a78a058382148b745fa458f0b9f52f47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method. Call the solvers to solve the system. <br /></td></tr>
 <tr class="separator:a78a058382148b745fa458f0b9f52f47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89537c37978b13e3540976bcb7fc603f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a89537c37978b13e3540976bcb7fc603f">write_solution</a> (string filename, int precision=5, char delimiter=',')</td></tr>
 <tr class="memdesc:a89537c37978b13e3540976bcb7fc603f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the solution as filetype given by the user<br />
@@ -134,10 +127,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 Vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a1379137a4480e5861fd1911bc061f908">y00</a></td></tr>
 <tr class="memdesc:a1379137a4480e5861fd1911bc061f908"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial condition <br /></td></tr>
 <tr class="separator:a1379137a4480e5861fd1911bc061f908"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dee2a4b3468547c3ddab15edfc8ddfd"><td class="memItemLeft" align="right" valign="top"><a id="a2dee2a4b3468547c3ddab15edfc8ddfd"></a>
-<a class="el" href="class_o_d_e___system.html#a9ff6775dafbba78d49f164174aa7074e">Funpointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a2dee2a4b3468547c3ddab15edfc8ddfd">g</a></td></tr>
-<tr class="memdesc:a2dee2a4b3468547c3ddab15edfc8ddfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer storing the function g as defined in the problem. <br /></td></tr>
-<tr class="separator:a2dee2a4b3468547c3ddab15edfc8ddfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a294fda765e6cbfd7dfda43755d2c55"><td class="memItemLeft" align="right" valign="top"><a id="a5a294fda765e6cbfd7dfda43755d2c55"></a>
+Vec_Funpointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a5a294fda765e6cbfd7dfda43755d2c55">g</a></td></tr>
+<tr class="memdesc:a5a294fda765e6cbfd7dfda43755d2c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer storing the function g as defined in the problem. <br /></td></tr>
+<tr class="separator:a5a294fda765e6cbfd7dfda43755d2c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a632009677e80b62a1996e842398bf8b6"><td class="memItemLeft" align="right" valign="top"><a id="a632009677e80b62a1996e842398bf8b6"></a>
 Matrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_d_e___system.html#a632009677e80b62a1996e842398bf8b6">A</a></td></tr>
 <tr class="memdesc:a632009677e80b62a1996e842398bf8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix A as defined in the problem. <br /></td></tr>
@@ -152,41 +145,6 @@ jth col = solution of the jth component at all time steps. <br /></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This abstract class stores essential ingredients of a vectorial ode system as well as a solution obtained by using specified solver functions. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a78a058382148b745fa458f0b9f52f47c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78a058382148b745fa458f0b9f52f47c">&#9670;&nbsp;</a></span>solve()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ODE_System::solve </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Pure virtual method. Call the solvers to solve the system. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">M</td><td>number of time steps </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="class_r_k_system4th___system.html#ae7e9125546c6590f50d581f5e6668c82">RKSystem4th_System</a>, <a class="el" href="class_adams___bashforth___system.html#aa34bb9a1367a3b15f606ff49054e9ece">Adams_Bashforth_System</a>, and <a class="el" href="class_forward_euler___system.html#a336f60f3804df3323a4729f9ff380b65">ForwardEuler_System</a>.</p>
-
-</div>
-</div>
 <a id="a89537c37978b13e3540976bcb7fc603f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89537c37978b13e3540976bcb7fc603f">&#9670;&nbsp;</a></span>write_solution()</h2>
 
@@ -235,8 +193,8 @@ jth col = solution of the jth component at all time steps. <br /></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Users/jiahuawu/Desktop/ODE_Solver/include/<a class="el" href="_o_d_e___system_8h_source.html">ODE_System.h</a></li>
-<li>/Users/jiahuawu/Desktop/ODE_Solver/src/ODE_System.cpp</li>
+<li>/Users/jiahuawu/Desktop/ODE_Solver2/<a class="el" href="_o_d_e__system_8h_source.html">ODE_system.h</a></li>
+<li>/Users/jiahuawu/Desktop/ODE_Solver2/ODE_system.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

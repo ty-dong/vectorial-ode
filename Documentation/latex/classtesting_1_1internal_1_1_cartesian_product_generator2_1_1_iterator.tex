@@ -1,0 +1,76 @@
+\hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator}{}\section{testing\+:\+:internal\+:\+:Cartesian\+Product\+Generator2$<$ T1, T2 $>$\+:\+:Iterator Class Reference}
+\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator}\index{testing\+::internal\+::\+Cartesian\+Product\+Generator2$<$ T1, T2 $>$\+::\+Iterator@{testing\+::internal\+::\+Cartesian\+Product\+Generator2$<$ T1, T2 $>$\+::\+Iterator}}
+Inheritance diagram for testing\+:\+:internal\+:\+:Cartesian\+Product\+Generator2$<$ T1, T2 $>$\+:\+:Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a6a8a81b732c307be9873156ef51c88e4}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a6a8a81b732c307be9873156ef51c88e4}} 
+{\bfseries Iterator} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator_interface}{Param\+Generator\+Interface}}$<$ Param\+Type $>$ $\ast$base, const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T1 $>$ \&g1, const typename \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T1 $>$\+::iterator \&current1, const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T2 $>$ \&g2, const typename \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T2 $>$\+::iterator \&current2)
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_afb2a3e49b097b84cbb72e9c6610d1028}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_afb2a3e49b097b84cbb72e9c6610d1028}} 
+virtual const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator_interface}{Param\+Generator\+Interface}}$<$ Param\+Type $>$ $\ast$ {\bfseries Base\+Generator} () const
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a05c85fc3b501fa28fd87fee29a9a794e}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a05c85fc3b501fa28fd87fee29a9a794e}} 
+virtual void {\bfseries Advance} ()
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a16549ce07f407867686a630e44afea0b}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a16549ce07f407867686a630e44afea0b}} 
+virtual \mbox{\hyperlink{classtesting_1_1internal_1_1_param_iterator_interface}{Param\+Iterator\+Interface}}$<$ Param\+Type $>$ $\ast$ {\bfseries Clone} () const
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_ad10d8850b4b02fb7a8d3c9b4cab113fb}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_ad10d8850b4b02fb7a8d3c9b4cab113fb}} 
+virtual const Param\+Type $\ast$ {\bfseries Current} () const
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_afcf168334da4c571f8628b08006cf920}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_afcf168334da4c571f8628b08006cf920}} 
+virtual bool {\bfseries Equals} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_iterator_interface}{Param\+Iterator\+Interface}}$<$ Param\+Type $>$ \&other) const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a9fc3b19248f3d92a0a125bb60a8717af}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a9fc3b19248f3d92a0a125bb60a8717af}} 
+{\bfseries Iterator} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator}{Iterator}} \&other)
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a722ec9ae27e15bd5c0aca8f188cc9600}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a722ec9ae27e15bd5c0aca8f188cc9600}} 
+void {\bfseries Compute\+Current\+Value} ()
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_aa88db98144c32c3fd7e8fae54e9782b4}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_aa88db98144c32c3fd7e8fae54e9782b4}} 
+bool {\bfseries At\+End} () const
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a2b14dc89c2c399d2ffe027f49f1568a7}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a2b14dc89c2c399d2ffe027f49f1568a7}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator}{Iterator}} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a345cddbd91a68028fe87fb1e47ac2d2d}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a345cddbd91a68028fe87fb1e47ac2d2d}} 
+const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator_interface}{Param\+Generator\+Interface}}$<$ Param\+Type $>$ $\ast$const {\bfseries base\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a8283547b12bd180ebfdaf2b93a9abec4}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a8283547b12bd180ebfdaf2b93a9abec4}} 
+const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T1 $>$\+::iterator {\bfseries begin1\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_ad6759df6a4dca16f8d59e968fe59bb95}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_ad6759df6a4dca16f8d59e968fe59bb95}} 
+const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T1 $>$\+::iterator {\bfseries end1\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a52b0b6d575a1dd78586b4912a53ea7b9}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a52b0b6d575a1dd78586b4912a53ea7b9}} 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T1 $>$\+::iterator {\bfseries current1\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a463a5db70edc44a4b7a174d924e18031}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a463a5db70edc44a4b7a174d924e18031}} 
+const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T2 $>$\+::iterator {\bfseries begin2\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a86def8b442ad4bae5423d70cbe059502}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a86def8b442ad4bae5423d70cbe059502}} 
+const \mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T2 $>$\+::iterator {\bfseries end2\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a3832af338d3433abdd84805ded9017e0}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a3832af338d3433abdd84805ded9017e0}} 
+\mbox{\hyperlink{classtesting_1_1internal_1_1_param_generator}{Param\+Generator}}$<$ T2 $>$\+::iterator {\bfseries current2\+\_\+}
+\item 
+\mbox{\Hypertarget{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a52fe871f3f904759d3f1432e2c7bd339}\label{classtesting_1_1internal_1_1_cartesian_product_generator2_1_1_iterator_a52fe871f3f904759d3f1432e2c7bd339}} 
+std\+::shared\+\_\+ptr$<$ Param\+Type $>$ {\bfseries current\+\_\+value\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jiahuawu/\+Desktop/\+O\+D\+E\+\_\+\+Solver/test/googletest/include/gtest/internal/gtest-\/param-\/util-\/generated.\+h\end{DoxyCompactItemize}

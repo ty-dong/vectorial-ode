@@ -3,8 +3,7 @@ var indexSectionsWithContent =
   0: "adfgmoprstvwy~",
   1: "adfmorstv",
   2: "adfmorsvw~",
-  3: "adgmpsty",
-  4: "f"
+  3: "adgmpsty"
 };
 
 var indexSectionNames =
@@ -12,8 +11,7 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "functions",
-  3: "variables",
-  4: "typedefs"
+  3: "variables"
 };
 
 var indexSectionLabels =
@@ -21,7 +19,6 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Functions",
-  3: "Variables",
-  4: "Typedefs"
+  3: "Variables"
 };
 
