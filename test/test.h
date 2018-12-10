@@ -8,10 +8,10 @@
 #include <iostream>
 #include <functional>
 #include<math.h>
-#include "../include/ODE_System.h"
+#include "../include/ODE_system.h"
 #include "../include/ODE_solver.h"
 #include "./googletest/include/gtest/gtest.h"
-#include "../include/Usual_functions.h"
+#include "../include/usual_functions.h"
 
 Vector sln(Real t);
 Vector ggtest(Real t){
