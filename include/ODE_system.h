@@ -41,7 +41,6 @@ public:
 
     /**
      * \brief Pure virtual method. Call the solvers to solve the system.
-     * @param M: number of time steps
      */
     virtual void solve() = 0;
 
@@ -89,7 +88,6 @@ public:
     /** \brief Implement explicit forward euler method and store the solution at all time steps in the attribute solution */
     /** f(t,y)=A*y+g(t)\n
      * y_{n+1}=y_n+f(t_n,y_n)*h \n
-     * @param M number of steps
      */
     void solve() override;
 };
@@ -109,7 +107,6 @@ public:
      * step=2: y_{n+2}=y_{n+1}+h*(3/2*f(t_{n+1},y_{n+1})-1/2*f(t_n,y_n)) \n
      * step=3: y_{n+3}=y_{n+2}+h*(23/12*f(t_{n+2},y_{n+2})-16/12*f(t_{n+1},y_{n+1})+5/12*f(t_n,y_n))\n
      * step=4: y_{n+4}=y_{n+3}+h*(55/24*f(t_{n+3},y_{n+3})-59/24*f(t_{n+2},y_{n+2})+37/24*f(t_{n+1},y_{n+1})-9/24*f(t_n,y_n)) \n
-     *  @param M number of steps
      */
     void solve() override;
 
@@ -135,7 +132,6 @@ public:
      * k_3=f(t_n+0.5*h,y_n+0.5*k_2)) \n
      * k_4=f(t_n+h,y_n+k_3)) \n
      * y_{n+1}=1/6*k_1+1/3*k_2+1/3*k_3+1/6*k_4 \n
-     * @param M number of steps
      */
     void solve() override;
 

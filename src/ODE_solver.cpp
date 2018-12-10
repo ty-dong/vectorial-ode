@@ -69,7 +69,7 @@ Real operator*(Vector const& h,Vector const & f){
 
 Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M,  Matrix const &A,Vector g(Real)){
     if(M<1){
-        throw timesteppossitive();
+        throw timesteppositive();
     }
     Real h=(tn-t0)/M;
     Matrix solution;
@@ -85,7 +85,7 @@ Matrix ForwardEuler(Real t0, Real tn, Vector const & y00, int M,  Matrix const &
 
 Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Matrix const &A,Vector g(Real)){
     if(M<1){
-        throw timesteppossitive();
+        throw timesteppositive();
     }
     Real h=(tn-t0)/M;
     Matrix solution;
@@ -146,7 +146,7 @@ Matrix Adams_Bashforth(Real t0, Real tn, Vector const & y00, int M, int step ,Ma
 
 Matrix RKSystem4th(Real t0, Real tn, Vector const & y00, int M, Matrix const &A,Vector g(Real)){
     if(M<1){
-        throw timesteppossitive();
+        throw timesteppositive();
     }
     Real h=(tn-t0)/M;
     Matrix solution;

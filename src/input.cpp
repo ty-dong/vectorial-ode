@@ -39,15 +39,14 @@ Matrix Usual_Function_Input(){
     // Use do..while structure to avoid dimension mismatch caused by careless invalid input
     // Only valid input is taken into account
     do{
-            cout<<"*************************"<<endl;
+            cout<<"************************************"<<endl;
             cout<<"Please input your choice of function g (press Enter after the choice of every dimension)"<<endl;
             cout<<"0 a*sin(b*t+c)"<<endl;
             cout<<"1 a*cos(b*t+c)"<<endl;
             cout<<"2 a*exp(b*t+c)"<<endl;
             cout<<"3 a*t^2+b*t+c"<<endl;
-            cout<<"4 terminate input process"<<endl;
-            cout<<"If none of above meets your need, please define your function g in settings/user_defined_g.h"<<endl;
-            cout<<"*************************"<<endl;
+            cout<<"If none of above meets your need, please exit the program and define your function g in settings/user_defined_g.h as well as modify the setting.dat"<<endl;
+            cout<<"************************************"<<endl;
 
             cin>>tmp;
             choice.push_back(tmp);
@@ -75,10 +74,6 @@ Matrix Usual_Function_Input(){
                     cin>>parameter[0]>>parameter[1]>>parameter[2];
                     allparameters_choice.push_back(parameter);
                     ++j;
-                    break;
-                case 4:
-                    cerr<<"Program terminated!"<<endl;
-                    j = dim;
                     break;
                 default:
                     cerr<<"No matching function types!"<<endl;
@@ -111,18 +106,18 @@ void Vector_Reader::read_in() {
     ifstream read_file(path);
     while (!read_file.eof()) {
         string line;
-
-        // Read the first line in s and end the loop if the file is empty
+        // Read the first line and end the loop if the file is empty
         if (!getline(read_file, line)) break;
 
-        // Initialize an istream with s(first line of the document)
+        // Initialize an istream with first line of the document
         istringstream ss(line);
 
+        string value;
         // Parse through ss(each loop corresponds to each line)
         while (ss) {
-            string s;
-            if (!getline(ss, s, delimiter)) break;
-            y.push_back(stod(s));
+            // Read until the delimiter is detected. Terminate the loop if the end of the line is reached
+            if (!getline(ss, value, delimiter)) break;
+            y.push_back(stod(value));
         }
     }
     read_file.close();
@@ -138,11 +133,11 @@ void Matrix_Reader::read_in() {
         if (!getline(read_file, line)) break;
 
         istringstream ss(line);
-        vector<double> record;
+        Vector record;
+        string value;
         while (ss){
-            string s;
-            if (!getline(ss, s, delimiter)) break;
-            record.push_back(stod(s));
+            if (!getline(ss, value, delimiter)) break;
+            record.push_back(stod(value));
         }
         A.push_back(record);
     }
@@ -161,12 +156,14 @@ void Setting_Reader::read_in() {
         // Read the first line in s and end the loop if the file is empty
         if (!getline(read_file, line)) break;
 
-        // Initialize an istream with s(first line of the document)
+        // Initialize an istream with first line of the document
         istringstream ss(line);
 
-        // Parse through ss
+        // Parse through ss, input parameter name to parameter
         getline(ss, parameter, ' ');
+        // Jump over the space and the '='
         getline(ss, tmp, '=');
+        // Read in the corresponding value(between '=' and '#')
         getline(ss, value, '#');
 
 

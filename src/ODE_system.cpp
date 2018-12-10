@@ -61,7 +61,7 @@ ForwardEuler_System::~ForwardEuler_System() {
 void ForwardEuler_System::solve() {
     try {
         solution = ForwardEuler(t0,tn,y00,M,A,g);
-    } catch (timesteppossitive& e1){
+    } catch (timesteppositive& e1){
         cout << e1.what();
     } catch (dimnotmatch& e2){
         cout << e2.what();
@@ -84,7 +84,7 @@ Adams_Bashforth_System::~Adams_Bashforth_System() {
 void Adams_Bashforth_System::solve() {
     try {
         solution = Adams_Bashforth(t0, tn, y00, M, step, A, g);
-    } catch (timesteppossitive& e1){
+    } catch (timesteppositive& e1){
         cout << e1.what();
     } catch (dimnotmatch& e2){
         cout << e2.what();
@@ -109,7 +109,7 @@ RKSystem4th_System::~RKSystem4th_System() {
 void RKSystem4th_System::solve() {
     try {
         solution = RKSystem4th(t0, tn, y00, M, A, g);
-    } catch (timesteppossitive& e1){
+    } catch (timesteppositive& e1){
         cout << e1.what();
     } catch (dimnotmatch& e2){
         cout << e2.what();

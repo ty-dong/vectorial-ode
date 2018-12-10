@@ -38,7 +38,7 @@ int main(int argc, char *argv[]){
     Vec_Funpointer g;
     switch (s.usual_function){
         case 0: g = user_define; break;
-        case 1: g = usual_fun; break;
+        default: g = usual_fun; break; //If the user define anything other than 0, enter in usual function.
     }
 
     ODE_System* system;

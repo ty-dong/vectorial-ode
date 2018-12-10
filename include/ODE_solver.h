@@ -23,7 +23,7 @@ public:
 };
 
 ///  Inheritance of class exception: time step should not be negative or 0
-class timesteppossitive:public exception{
+class timesteppositive:public exception{
 public:
     virtual const char* what() const throw(){
         return "The input number of time step should be possitive!\n";
