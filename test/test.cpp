@@ -32,7 +32,7 @@ TEST_F(RK4test,rk4){
 
 //test the input process; whether A, y00, etc can be read in correctly.
 TEST(input_test,c1){
-    string setting_path("../settings/setting.dat");
+    string setting_path("./settings/setting.dat");
     Setting_Reader r(setting_path);
     r.read_in();
     Setting s = r.access_setting();
@@ -107,7 +107,7 @@ TEST(vector_add_minus,c3){
 }
 
 //test the operator*: vector multiplication
-TEST(vector_times,c4){
+TEST(vector_times_vector,c4){
     Vector a={1,2,3,4,5,6,7,8,9,10};
     Vector b={10,9,8,7,6,5,4,3,2,1};
     EXPECT_EQ(a*b,220);
