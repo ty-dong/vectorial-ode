@@ -6,8 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(Source_dir ../src)
 set(Include_dir ../include)
 set(Setting_dir ../Settings)
-set(Sources  ${Source_dir}/ODE_System.cpp ${Source_dir}/ODE_solver.cpp ${Source_dir}/Input.cpp)
-set(Headers ${Include_dir}/ODE_System.h ${Include_dir}/ODE_solver.h ${Include_dir}/Input.h ${Setting_dir}/User_defined_g.h)
+set(Sources  ${Source_dir}/ODE_system.cpp ${Source_dir}/ODE_solver.cpp ${Source_dir}/input.cpp)
+set(Headers ${Include_dir}/ODE_system.h ${Include_dir}/ODE_solver.h ${Include_dir}/input.h ${Include_dir}/usual_functions.h)
 
 add_subdirectory(googletest)
 

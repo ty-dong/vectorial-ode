@@ -7,4 +7,4 @@ delimiter_data = , 	    	   # [Optional] Delimiter of A and y00, space by defaul
 M = 100                            # number of steps
 precision = 5 		           # [Optional] precision of output values
 delimiter_solution = ,      	   # [Optional] delimiter used in the solution file
-usual_function = 1		   # [Optional] use the usual_function(1) or not(0). 		
+usual_function = 0		   # [Optional] use the usual_function(1) or not(0). 		

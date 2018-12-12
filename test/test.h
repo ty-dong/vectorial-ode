@@ -81,6 +81,10 @@ protected:
 
 };
 
+class func_g_test:public ::testing::TestWithParam<Real>{
+
+};
+
 Vector sln(Real t){
     Vector rlt;
     rlt.push_back(exp(t)+2*sin(t)+cos(t)-1);
@@ -88,4 +92,13 @@ Vector sln(Real t){
     rlt.push_back(2*sin(t)+cos(t));
     return rlt;
 }
+
+Vector user_define_g(Real t){
+    Vector v;
+    v.push_back(sin(3*t-2)+exp(t/100));
+    v.push_back(cos(sin(t+3)));
+    v.push_back(1/(t*t+1));
+    v.push_back(log(t*t+20));
+    return v;
+};
 #endif //ODE_SOLVER_TEST_H
