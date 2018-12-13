@@ -126,7 +126,7 @@ TEST(vector_times_constant,c5){
 INSTANTIATE_TEST_CASE_P(If_Equal,func_g_test,testing::Range(-100.0,100.0,1.0));
 TEST_P(func_g_test,c3){
     Vec_Funpointer g;
-    string setting_path("../settings/setting.dat");
+    string setting_path("./settings/setting.dat");
     Setting_Reader r(setting_path);
     r.read_in();
     Setting s = r.access_setting();
@@ -140,8 +140,8 @@ TEST_P(func_g_test,c3){
 
 //test the output process: whether the solution is successfuly written
 TEST_F(Eulertest,output){
-    euler.write_solution("../solution/solution");
-    Matrix_Reader m("../solution/solution",',');
+    euler.write_solution("./solution/solution");
+    Matrix_Reader m("./solution/solution",',');
     m.read_in();
     Matrix sln;
     sln=m.access_matrix();

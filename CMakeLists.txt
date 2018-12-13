@@ -10,4 +10,4 @@ set(Sources ${Source_dir}/main.cpp ${Source_dir}/ODE_system.cpp
         ${Source_dir}/ODE_solver.cpp ${Source_dir}/input.cpp)
 set(Headers ${Include_dir}/ODE_system.h ${Include_dir}/ODE_solver.h
         ${Include_dir}/input.h ${Include_dir}/usual_functions.h ${Setting_dir}/user_defined_g.h)
-add_executable(test ${Sources} ${Headers})
+add_executable(ODE_solver ${Sources} ${Headers})
