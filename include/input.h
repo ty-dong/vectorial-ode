@@ -9,17 +9,27 @@
 #include <string>
 using namespace std;
 
-/// Structure storing parameters read from the setting file
+/// Container storing parameters read from the setting file used in input flow
 struct Setting{
+    /// The number of discretization steps
     int M;
+    /// The precision of the output value
     int precision = 5;
+    /// To use default usual funciton(1) or use user defined function(0)
     int usual_function = 1;
+    /// The initial time
     Real t0;
+    /// The end time
     Real tn;
+    /// The path where the initial condition is stored
     string path_y00;
+    /// The path where the matrix A is stored
     string path_A;
+    /// The path where the solution matrix is stored
     string path_solution;
+    /// The delimiter in the input data(A,y00)
     char delimiter_data = ' ';
+    /// The delimiter wished to use in the output solution
     char delimiter_solution = ',';
 };
 

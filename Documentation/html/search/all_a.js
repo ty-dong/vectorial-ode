@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector_5freader',['Vector_Reader',['../class_vector___reader.html',1,'Vector_Reader'],['../class_vector___reader.html#a373565979af8b307dfddee36b22d7816',1,'Vector_Reader::Vector_Reader()']]]
+  ['usual_5ffunction',['usual_function',['../struct_setting.html#aa4971ccaf90929605fc4f326e9f0b08a',1,'Setting']]]
 ];

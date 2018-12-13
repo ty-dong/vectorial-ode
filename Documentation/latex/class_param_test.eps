@@ -174,12 +174,12 @@
 boxfont setfont
 1 boundaspect scale
 (ParamTest) cw
-(testing::TestWithParam< int >) cw
 (testing::TestWithParam< std::string >) cw
-(testing::Test) cw
-(testing::WithParamInterface< int >) cw
+(testing::TestWithParam< int >) cw
 (testing::Test) cw
 (testing::WithParamInterface< std::string >) cw
+(testing::Test) cw
+(testing::WithParamInterface< int >) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -192,12 +192,12 @@ boundx scalefactor div boundy scalefactor div scale
 % ----- classes -----
 
  (ParamTest) 1.500000 0.000000 box
- (testing::TestWithParam< int >) 0.500000 1.000000 box
- (testing::TestWithParam< std::string >) 2.500000 1.000000 box
+ (testing::TestWithParam< std::string >) 0.500000 1.000000 box
+ (testing::TestWithParam< int >) 2.500000 1.000000 box
  (testing::Test) 0.000000 2.000000 box
- (testing::WithParamInterface< int >) 1.000000 2.000000 box
+ (testing::WithParamInterface< std::string >) 1.000000 2.000000 box
  (testing::Test) 2.000000 2.000000 box
- (testing::WithParamInterface< std::string >) 3.000000 2.000000 box
+ (testing::WithParamInterface< int >) 3.000000 2.000000 box
 
 % ----- relations -----
 

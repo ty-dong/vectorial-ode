@@ -10,9 +10,6 @@
 
 Vector user_define(Real t){
     Vector v;
-    v.push_back(2-t);
-    v.push_back(0);
-    v.push_back(1-t);
     return v;
 };
 
