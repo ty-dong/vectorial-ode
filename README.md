@@ -11,7 +11,6 @@ using classic solving methods: Euler Forward Method (EFM), Adams-Bashforth Metho
 |E-mail|tianyang.dong@epfl.ch|jiahua.wu@epfl.ch
 ----
 
-
 ## Usage
 
 ### Obtention of the file
@@ -49,6 +48,16 @@ ODE_Solver
 |   ├── googletest
 └──  Documentation
 ```
+
+### Generation of Documentation
+In the file cloned from c4science, type:
+```
+doxygen Doxyfile
+```
+A folder called "Documentation", which contains two subfolders called "html" and "latex" , will be created. Please enter "html" and open the file "index.html" to have an overview of the project. 
+
+
+
 ### Setting of parameters
 Data needed are read from folder `ODE_Solver/settings`: matrix $$A$$ from `A.dat`, vectorial initial condition $$y_{00}$$ from `y00.dat`, all other preconditions from `setting.dat`. Following the instruction given, users can also modify the parameters in `setting.dat` to suit their need.
 ### Definition of function $$g$$ in RHS
@@ -75,14 +84,6 @@ Valid solving method names: ForwardEuler, Adams_Bashforth, RKSystem4th.
 ### Output of Solution
 By default, solution of the ODE system will be automatically written in `ODE_Solver/Solution/solution`. The solution will be in form of a matrix whose rows represent the solution at each step (starting from intial time). Users can specify the path which the solution is written to, the precision of the values and the delimiter used in the file `ODE_Solver/settings/setting.dat`.  
 
-### Generation of Documentation
-In the file cloned from c4science, type:
-```
-doxygen Doxyfile
-```
-A folder called "Documentation", which contains two subfolders called "html" and "latex" , will be created. Please enter "html" and open the file "index.html" to have an overview of the project. 
-
-
 ## Features
 
   - Implement Forward Euler method, four steps of Adams Bashforth method and Runge-Kutta 4th order method.
@@ -98,6 +99,7 @@ $$y(t)=e^x\begin{bmatrix} 1 \\  -1 \\ 0 \end{bmatrix}+2\begin{bmatrix} \sin(x) \
 Besides, the input process (whether $$A$$, $$y_{00}$$, other settings are read in successfully), the output process (whether the solution is written to `/test/solution/solution`), the correctness of vector operators (*, +, -), the usage of function $$g$$ (whether $$g$$ can be read from `/test/settings/user_defined_g.h`) are also tested.
 To run the test:
 ```
+$ cd test
 $ cmake .
 $ make
 $ ./test
