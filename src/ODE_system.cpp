@@ -41,7 +41,7 @@ void ODE_System::write_solution(string path, int precision, char delimiter) {
         outFile << vector[vector.size()-1];
         outFile << endl;
     }
-    cout << "Solution is successfully written.\n" << endl ;
+    cout << "Solution is successfully written " << "in " << path << endl ;
     outFile.close();
 }
 

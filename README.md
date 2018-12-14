@@ -11,7 +11,9 @@ using classic solving methods: Euler Forward Method (EFM), Adams-Bashforth Metho
 |E-mail|tianyang.dong@epfl.ch|jiahua.wu@epfl.ch
 ----
 
+
 ## Usage
+
 ### Obtention of the file
 
 Clone the code pakage from c4science:
@@ -66,14 +68,13 @@ $ ./ODE_solver [setting-path] [solving-method-name]
 ```
 In our case, to run the program, type
 ```
-$ ./ODE_solver ../settings/setting.dat [solving-method-name]
+$ ./ODE_solver ./settings/setting.dat [solving-method-name]
 ```
 Valid solving method names: ForwardEuler, Adams_Bashforth, RKSystem4th.
 
 ### Output of Solution
 By default, solution of the ODE system will be automatically written in `ODE_Solver/Solution/solution`. The solution will be in form of a matrix whose rows represent the solution at each step (starting from intial time). Users can specify the path which the solution is written to, the precision of the values and the delimiter used in the file `ODE_Solver/settings/setting.dat`.  
 
-#### 
 
 ## Features
 
