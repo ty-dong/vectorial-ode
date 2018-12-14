@@ -75,6 +75,13 @@ Valid solving method names: ForwardEuler, Adams_Bashforth, RKSystem4th.
 ### Output of Solution
 By default, solution of the ODE system will be automatically written in `ODE_Solver/Solution/solution`. The solution will be in form of a matrix whose rows represent the solution at each step (starting from intial time). Users can specify the path which the solution is written to, the precision of the values and the delimiter used in the file `ODE_Solver/settings/setting.dat`.  
 
+### Generation of Documentation
+In the file cloned from c4science, type:
+```
+doxygen Doxyfile
+```
+A folder called "Documentation", which contains two subfolders called "html" and "latex" , will be created. Please enter "html" and open the file "index.html" to have an overview of the project. 
+
 
 ## Features
 
